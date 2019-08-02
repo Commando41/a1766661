@@ -1,7 +1,10 @@
 double average(int array[], int n){
 
+double average;
+
 if (n < 1){
-return 0.0;
+average = 0.0;
+return average;
 }
 
 
@@ -10,7 +13,7 @@ for (int i = 0; i < n; i++){
 sum += array[i];
 }
 
-double average = sum/n;
+average = sum/n;
 
 return average;
 }
