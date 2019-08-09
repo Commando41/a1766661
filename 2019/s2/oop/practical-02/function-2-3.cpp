@@ -32,7 +32,7 @@ if (length < 0){
 return -2;
 }
 int sum;
-if (is_a_palinedrome(integers, length) == true){
+if (is_a_palindrome(integers, length) == true){
 sum = sum_elements(integers, length);
 }else{
 sum = -2;
