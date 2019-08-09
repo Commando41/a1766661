@@ -7,7 +7,7 @@ void print_as_binary(std::string decimal_number){
 
 int number = stoi(decimal_number);
 cout << number << endl;
-int binary[100]; 
+int binary[1000]; 
 int i = 0;
 
 while (number > 0){
