@@ -1,5 +1,5 @@
 
-bool is_a_palinedrome(int integers[], int length)
+bool is_a_palindrome(int integers[], int length)
 {
 if (length < 0){
 return false;
@@ -26,7 +26,7 @@ sum = sum + integers[i];
 return sum;
 }
 
-int sum_if_a_palinedrome(int integers[], int length)
+int sum_if_a_palindrome(int integers[], int length)
 {
 if (length < 0){
 return -2;

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <math.h>
-extern int sum_if_a_palinedrome(int integers[], int length);
+extern int sum_if_a_palindrome(int integers[], int length);
 
 int main(){
 
