@@ -9,6 +9,7 @@ std::cout << array[i][j];
 }else{
 std::cout << array[i][j] << " ";
 }
+}
 std::cout << std::endl;
 }
 
