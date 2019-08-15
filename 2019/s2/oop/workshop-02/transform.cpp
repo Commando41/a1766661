@@ -21,7 +21,7 @@ number = number / 2;
 
 }
 
-std::cout << output << std::endl;
+cout << output << endl;
 
 return 0;
 }
