@@ -6,6 +6,9 @@ for (int i = 0; i < length; i++){
 for (int j = 0; j < length-1; j++){
 second[i][j] = first[i][j];
 cout << second[i][j];
+if (j == 0){
+cout << " ";
+}
 }
 cout << endl;
 }
