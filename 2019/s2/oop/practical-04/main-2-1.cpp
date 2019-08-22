@@ -1,6 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
-
+#include <cmath>
 extern void print_sevens(int *nums, int length);
 
 int main(){
