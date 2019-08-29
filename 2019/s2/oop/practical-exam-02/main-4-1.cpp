@@ -9,11 +9,11 @@ extern void printSubArrays(int *numbers, int length);
 
 int main(){
 
-	int *setA = readNumbers(4);
+	int *setA = readNumbers(3);
 	
 	//printNumbers(setA, 4);
 	
-	printSubArrays(setA, 4);
+	printSubArrays(setA, 3);
 	
 return 0;
 }

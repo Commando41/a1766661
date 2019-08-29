@@ -6,8 +6,8 @@ extern void grades(int *gradepoints, int length);
 
 int main(){
 
-	int *setA = readNumbers(5);
-	grades(setA, 5);
+	int *setA = readNumbers(4);
+	grades(setA, 4);
 	
 
 return 0;
