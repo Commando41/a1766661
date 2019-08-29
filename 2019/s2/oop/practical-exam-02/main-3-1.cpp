@@ -13,6 +13,9 @@ int main(){
 	equals = equalsArray(setA, setB, 4);
 	//printNumbers(setA, 4);
 	std::cout << equals << std::endl;
+
+delete[] setA;
+delete[] setB;
 return 0;
 }
 

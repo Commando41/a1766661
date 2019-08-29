@@ -28,7 +28,7 @@ bool equalsArray(int *array1, int *array2, int length){
 	}
 
 	for(int i = 0; i < length; i++){
-	*(array1+i) != *(array2+i);
+	*(array1 + i) != *(array2 + i);
 	return false;	
 	}
 
@@ -40,7 +40,7 @@ int *negateArray(int *numbers, int length){
 	int *negNums = new int[length];
 
 	for (int i = 0; i < length; i++){
-		*(negNums+i) = *(numbers+i) * -1;
+		*(negNums + i) = *(numbers + i) * -1;
 	}
 
 return negNums;
