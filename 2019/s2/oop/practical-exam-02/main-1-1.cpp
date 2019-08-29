@@ -7,7 +7,7 @@ extern void printNumbers(int *numbers, int length);
 
 int main(){
 
-	int setA = readNumbers(4);
+	int *setA = readNumbers(4);
 
 	printNumbers(setA, 4);
 

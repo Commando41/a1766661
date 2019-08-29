@@ -1,6 +1,6 @@
 #include <iostream>
 
-namespace std;
+using namespace std;
 
 int *readNumbers( int n){
 
