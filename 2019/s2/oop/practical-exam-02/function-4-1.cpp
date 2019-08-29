@@ -31,6 +31,7 @@ void printSubArrays(int *numbers, int length){
 	cout << *(numbers+k);
 	}else{
 	cout << *(numbers+k) << ",";
+	}
 }
 	cout << "}" << endl;
 }
