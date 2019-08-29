@@ -27,7 +27,7 @@ void printSubArrays(int *numbers, int length){
 	for(int l = 0; l < i; l++){
 	cout << "{";
 	for(int k = l; k < i; k++){
-	if(k == l-1){
+	if(k == i-1){
 	cout << *(numbers+k);
 	}else{
 	cout << *(numbers+k) << ",";
