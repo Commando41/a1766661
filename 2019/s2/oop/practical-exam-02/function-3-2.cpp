@@ -37,7 +37,7 @@ return true;
 
 int *negateArray(int *numbers, int length){
 
-	int negNums = new int[length];
+	int *negNums = new int[length];
 
 	for (int i = 0; i < length; i++){
 		*(negNums+i) = *(numbers+i) * -1;

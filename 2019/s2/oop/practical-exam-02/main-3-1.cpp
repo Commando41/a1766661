@@ -11,7 +11,7 @@ int main(){
 	int *setB = readNumbers(4);
 	bool equals;
 	equals = equalsArray(setA, setB, 4);
-	printNumbers(setA, 4);
+	//printNumbers(setA, 4);
 	std::cout << equals << std::endl;
 return 0;
 }
