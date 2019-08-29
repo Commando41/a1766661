@@ -4,7 +4,7 @@ using namespace std;
 
 int *readNumbers(int n){
 
-	int array = new int[n];
+	int *array = new int[n];
 	for(int i = 0; i < n; i++){
 	cin >> *(array+i);	
 	}
@@ -14,7 +14,7 @@ int *readNumbers(int n){
 void grades(int *gradespoint, int length){
 
 	for(int i = 0; i < length; i++){
-		switch (gradespoint+i){
+		switch (*(gradespoint+i)){
 			case 1: cout << i << *(gradespoint+i) << "Fail" << endl;
 			break;
 			case 2: cout << i << *(gradespoint+i) << "Pass" << endl;
