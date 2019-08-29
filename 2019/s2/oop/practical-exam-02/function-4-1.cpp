@@ -25,10 +25,14 @@ void printSubArrays(int *numbers, int length){
 
 	for(int i = 1; i < length + 1; i++){
 	for(int l = 0; l < i; l++){
+	cout << "{";
 	for(int k = l; k < i; k++){
+	if(k == l-1){
 	cout << *(numbers+k);
+	}else{
+	cout << *(numbers+k) << ",";
 }
-	cout << endl;
+	cout << "}" << endl;
 }
 }
 }
