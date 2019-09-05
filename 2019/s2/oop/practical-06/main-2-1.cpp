@@ -31,6 +31,12 @@ int main(){
 	
 	cart *cart1;
 	cart1 = new cart();
+	cart1->addMeerkat(*meerkat1);
+	cart1->addMeerkat(*meerkat2);
+	cart1->addMeerkat(*meerkat3);
+	cart1->addMeerkat(*meerkat4);
+	cart1->addMeerkat(*meerkat5);
+	cart1->addMeerkat(*meerkat1);
 
 return 0;
 }
