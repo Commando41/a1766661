@@ -9,14 +9,14 @@ meerkat::meerkat()
 	age = 1;
 }
 
-void meerkat::setName(string meerName);
+void meerkat::setName(string meerName)
 {
 	name = meerName;
 }
 
 string meerkat::getName()
 {
-	cin >> name;
+	return name;
 }
 
 void meerkat::setAge(int meerAge)
@@ -24,9 +24,9 @@ void meerkat::setAge(int meerAge)
 	age = meerAge;
 }
 
-int meerkat::getAge();
+int meerkat::getAge()
 {
-	cin >> age;
+	return age;
 }
 
 meerkat::~meerkat()
