@@ -37,6 +37,8 @@ int main(){
 	cart1->addMeerkat(*meerkat4);
 	cart1->addMeerkat(*meerkat5);
 	cart1->addMeerkat(*meerkat1);
+	cart1->emptyCart();
+	cart1->printMeerkats();
 
 return 0;
 }

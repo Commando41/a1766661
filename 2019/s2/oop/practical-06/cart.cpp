@@ -10,10 +10,10 @@ cart::cart()
 
 bool cart::addMeerkat(meerkat cat)
 {
-	int i = cartCap;
-	Meerkat[i] = cat.getName();
-	MeerAge[i] = cat.getAge();
-	if (cartCap == 5){
+	//int i = cartCap;
+	Meerkat[cartCap] = cat.getName();
+	MeerAge[cartCap] = cat.getAge();
+	if (cartCap == 4){
 		cout << "Too many meerkats!" << endl;
 		return false;	
 	}else{
@@ -23,15 +23,13 @@ bool cart::addMeerkat(meerkat cat)
 }
 
 void cart::emptyCart()
-{
-	if (cartCap == 5){	
-		cartCap = 0;
-	}
+{	
+	cartCap = 0;
 }
 
 void cart::printMeerkats()
 {
-	for(int i = 0; i< 5; i++){
+	for(int i = 0; i< cartCap; i++){
 		cout << Meerkat[i] << " " << MeerAge[i] << endl;
 	}
 }
