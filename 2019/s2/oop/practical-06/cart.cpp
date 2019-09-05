@@ -15,7 +15,7 @@ bool cart::addMeerkat(meerkat cat)
 
 		return false;	
 	}else{
-	Meerkat[cartCap] = cat
+	Meerkat[cartCap] = cat;
 	cartCap++;
 	}
 	return true;
