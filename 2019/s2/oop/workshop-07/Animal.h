@@ -7,16 +7,16 @@ using namespace std;
 class Animal {
 public:
 	
+	Animal(string aSpecies);
 	string species, name;
 	static int currentID;
 	int ID;
-	Animal(string aSpecies);
+	
 	void set_name(string aName);
 	string get_species();
 	string get_name();
 	int get_ID();
+	//~Animal();
 };
-
-
 
 #endif

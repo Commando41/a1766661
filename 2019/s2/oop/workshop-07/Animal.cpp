@@ -30,3 +30,5 @@ int Animal::get_ID()
 {
 	return ID;
 }
+
+//Animal::~Animal(){}
