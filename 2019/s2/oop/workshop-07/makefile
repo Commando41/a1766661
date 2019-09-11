@@ -5,7 +5,7 @@ mycode: main-1-1.cpp Animal.o
 
 Animal.o: Animal.h Animal.cpp
 	@echo 'Compiling the component files'
-	g++ -c Animal.cpp
+	g++ -c Animal.cpp Animal.h
 
 upload: 
 	svn add *.cpp
