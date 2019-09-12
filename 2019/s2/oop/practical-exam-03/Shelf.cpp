@@ -24,7 +24,7 @@ int Shelf::get_number_of_music_boxes()
 
 Music_box Shelf::*get_contents()
 {
-	return music_boxes;
+	return *music_boxes;
 }
 
 bool Shelf::add_music_box(Music_box a_music_box)
