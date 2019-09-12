@@ -15,8 +15,8 @@ int main(){
 	Shelf s1(10);
 	s1.get_width();
 	
-	shelf1.add_music_box(Music_box *box1);
-	shelf1.get_number_of_music_boxes();
+	s1.add_music_box(Music_box *box1);
+	s1.get_number_of_music_boxes();
 
 	
 

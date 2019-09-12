@@ -24,14 +24,14 @@ int Shelf::get_number_of_music_boxes()
 
 Music_box Shelf::*get_contents()
 {
-	return music_boxes;
+	return *music_boxes;
 }
 
 bool Shelf::add_music_box(Music_box a_music_box)
 {
-	int width = a_music_box.getwidth();
+	int width = a_music_box.get_width();
 	if(width < w){
-		*(music_boxes+i) = a_music_box;
+		music_boxes[i] = a_music_box;
 		w = w - a_music_box.get_width();
 		i++;
 		return true;
