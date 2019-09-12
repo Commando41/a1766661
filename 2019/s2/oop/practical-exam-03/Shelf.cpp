@@ -17,7 +17,7 @@ Shelf::Shelf(int width)
 	w = width;
 }
 
-int Shelf::get_number_of_music_boxes()
+int Shelf::*get_number_of_music_boxes()
 {
 	return num_of_music_boxes;
 }
@@ -29,7 +29,7 @@ Music_box Shelf::get_contents()
 
 bool Shelf::add_music_box(Music_box a_music_box)
 {
-	width = a_music_box.getwidth();
+	int width = a_music_box.getwidth();
 	if(width < w){
 		*(music_boxes+i) = a_music_box;
 		w = w - a_music_box.get_width();
