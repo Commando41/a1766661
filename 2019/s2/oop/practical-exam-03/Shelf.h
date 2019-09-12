@@ -1,5 +1,6 @@
 #ifndef SHELF_H
 #define SHELF_H
+#include "Music_box.h"
 using namespace std;
 #include <string>
 
