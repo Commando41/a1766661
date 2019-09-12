@@ -17,12 +17,12 @@ Shelf::Shelf(int width)
 	w = width;
 }
 
-int Shelf::*get_number_of_music_boxes()
+int Shelf::get_number_of_music_boxes()
 {
 	return num_of_music_boxes;
 }
 
-Music_box Shelf::get_contents()
+Music_box Shelf::*get_contents()
 {
 	return music_boxes;
 }
