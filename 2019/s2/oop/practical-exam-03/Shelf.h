@@ -5,11 +5,12 @@ using namespace std;
 
 class Shelf : public Music_box
 {
+public:
 	Shelf();
 	Shelf(int width);
 	int get_width();
 	int num_of_music_boxes;
-	int w
+	int w;
 	Music_box *music_boxes = new Music_boxes[4];
 	int get_number_of_music_boxes();
 	Music_box *get_contents();

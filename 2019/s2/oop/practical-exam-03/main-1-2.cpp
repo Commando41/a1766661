@@ -9,10 +9,10 @@ int main(){
 	Music_box box1("Garry", 2);
 	Music_box box2("Larry", 3);
 	Music_box box3("Terry", 4);
-	Music_box box3("Merry", 1);
-	Music_box box3("Terry", 4);
+	Music_box box4("Merry", 1);
+	Music_box box5("Terry", 4);
 
-	Shelf shelf1(10);
+	Shelf s1(10);
 	shelf1.get_width();
 	
 	shelf1.add_music_box(*box1);
