@@ -1,0 +1,1 @@
+Enter x: Enter y: x = 6, y = 0, x + y = 6

@@ -12,8 +12,9 @@ Hunter::Hunter(string aSpecies):Animal(aSpecies)
 
 void Hunter::record_kill(string kill)
 {
-	killStreak++;
 	victims.push_back(kill);
+	killStreak++;
+	
 };
 
 vector<string> Hunter::get_kills()
