@@ -1,14 +1,14 @@
 #include<iostream>
 #include "Music_box.h"
 #include<string>
-
+using namespace std;
 Music_box::Music_box()
 {
 	song = "NULL";
 	width = 0;
 }
 
-Music_box::Music_box(stering songname, int width)
+Music_box::Music_box(string songname, int width)
 {
 	song = songname;
 	width = width;
