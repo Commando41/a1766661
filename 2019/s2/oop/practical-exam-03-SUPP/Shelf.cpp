@@ -5,7 +5,7 @@
 using namespace std;
 Shelf::Shelf()
 {
-	Swidth = 0;
+	Awidth = 0;
 	currentWidth = 0;
 }
 
