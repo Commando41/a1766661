@@ -9,7 +9,7 @@ int main()
 
 	Shelf *wooden = new Shelf(50);
 	
-	Music_box Jazz
+	//Music_box Jazz;
 
 	return 0;
 }

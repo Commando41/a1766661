@@ -6,11 +6,13 @@ using namespace std;
 Shelf::Shelf()
 {
 	Swidth = 0;
+	currentWidth = 0;
 }
 
 Shelf::Shelf(int width)
 {
-	Swidth = width;
+	Awidth = width;
+	currentWidth = width;
 }
 
 int Shelf::get_width()
@@ -38,7 +40,7 @@ bool Shelf::add_music_box(Music_box a_music_box)
 	{
 		Box[count] = a_music_box;
 		currentWidth = currentWidth - a_music_box.width;
-		count++
+		count++;
 		return true;
 	}else{
 		return false;

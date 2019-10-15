@@ -17,6 +17,7 @@ class Shelf
 		int count;
 		Music_box *get_contents();
 		Music_box Box[5];
+		int currentWidth;
 		bool add_music_box(Music_box a_music_box);
 		~Shelf();
 };
