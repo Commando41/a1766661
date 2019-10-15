@@ -8,10 +8,10 @@ Music_box::Music_box()
 	width = 0;
 }
 
-Music_box::Music_box(string songname, int width)
+Music_box::Music_box(string songname, int Swidth)
 {
 	song = songname;
-	width = width;
+	width = Swidth;
 }
 
 int Music_box::get_width()
