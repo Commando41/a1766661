@@ -25,7 +25,7 @@ int main()
 	cout << "Shelf has" << endl;
 	for(int i = 0; i < boxes; i++)
 	{
-		
+		cout << music->get_song() << ", width is " << music->get_width() << endl;
 	}
 	return 0;
 }
