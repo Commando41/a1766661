@@ -4,7 +4,7 @@
 using namespace std;
 Music_box::Music_box()
 {
-	song = "NULL";
+	song = "null";
 	width = 0;
 }
 
