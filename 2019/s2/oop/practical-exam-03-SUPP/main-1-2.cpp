@@ -19,7 +19,7 @@ int main()
 	}
 
 	Music_box *music = new Music_box();
-	music->get_contents();
+	music = wooden->get_contents();
 	int boxes = wooden->get_number_of_music_boxes();
 	
 	cout << "Shelf has" << endl;
