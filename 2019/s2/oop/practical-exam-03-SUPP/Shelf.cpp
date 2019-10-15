@@ -7,10 +7,12 @@ Shelf::Shelf()
 {
 	Awidth = 0;
 	currentWidth = 0;
+	count = 0;
 }
 
 Shelf::Shelf(int width)
 {
+	count = 0;	
 	Awidth = width;
 	currentWidth = width;
 }
