@@ -9,7 +9,9 @@ int main()
 
 	Shelf *wooden = new Shelf(50);
 	
-	Music_box Jazz = new Music_box(20);
+	Music_box Jazz("Larry", 20);
+
+	
 
 	Music_box *music = new Music_box(3);
 	
