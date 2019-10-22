@@ -2,6 +2,8 @@ events:
 
 fire bullets
 ship explodes
-rocks explodes and break into smaller pieces
-When touches a health icon, health increases by one
-Multiple objects moving at once
+player turning
+acceleration
+
+Missile hits asteroids
+Asteroids break into smaller asteroids

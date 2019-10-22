@@ -1,0 +1,60 @@
+while (health > 0)
+{
+	int inputTurn;
+	cin >> inputTurn;
+	if(inputTurn == 1)
+	{
+		a[i][j] = " ^ ";
+	}
+	else if(inputTurn == 2)
+	{
+		a[i][j] = " > ";
+	}
+	else if(inputTurn == 3)
+	{
+		a[i][j] = " < ";
+	}
+	else if(inputTurn == 4
+	{
+		a[i][j] = " V ";
+	}
+	
+	int inputMove;
+	cin >> inputMove;
+	if(inputMove == 1)
+	{
+		i--;
+		a[i][j] = a[i+1][j];
+		a[i+1][j] = "    ";
+	}
+	else if(inputMove == 2)
+	{
+		j++;
+		a[i][j] = a[i][j-1];
+		a[i][j-1] = "    ";
+	}
+	else if(inputMove == 3)
+	{
+		j--;
+		a[i][j] = a[i][j+1];
+		a[i][j+1] = "    ";
+	}
+	else if(inputMove == 4)
+	{
+		i++;
+		a[i][j] = a[i-1][j];
+		a[i-1][j] = "    ";
+	}
+	
+	
+}
+
+Control loop:
+
+loop while (lives > 0) {
+	if ship hits asteroid -> ship gets destroyed and player loses a life
+	if an asteroid is hit -> if asteroid is big, the break into smaller pieces, otherwise destroyed
+	if a button is pressed -> missile is fired
+	if a button is pressed -> turn ship angle
+}
+	

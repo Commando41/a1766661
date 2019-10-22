@@ -1,0 +1,8 @@
+Shield:
+
+if the shield button is pressed and the energy bar is grater
+than a specific amount, the the ship sprite is replaces with
+a new sprite while the button is pressed and the energy bar
+is greater than zero.
+
+if the button is released, the energy bar increases overtime.

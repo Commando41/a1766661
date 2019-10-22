@@ -1,0 +1,4 @@
+The original asteroid didnt allow rocks to intereact with other
+rocks, Why do you think this is?
+
+The programmers didnt implement code to allow intereactions between asteroids.
