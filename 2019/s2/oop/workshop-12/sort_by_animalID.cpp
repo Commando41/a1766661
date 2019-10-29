@@ -7,17 +7,14 @@ using namespace std;
 
 void sort_by_animalID::sort(animal **animals, int n)
 {
-	ordered = 0;
-	orderedAnimal = new animal*[n];
-	while(ordered < n)
-	{
+	animal *temp;
 	for(int i = 0; i < n; i++)
 	{
-		if(animal[i].ID == ordered)
+		if(animals[i]->get_id() > animals[i+1]->get_id())
 		{
-			orderedAnimal[ordered] = animal[i];
-			ordered++
+			temp = animals[i]; 
+			animals[i] = animals[i+1];
+			animals[i+1] = temp;
 		}
-	}
 	}
 }
