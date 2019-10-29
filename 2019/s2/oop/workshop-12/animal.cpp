@@ -4,34 +4,34 @@
 
 //int Animal::ID = 0;
 
-Animal::Animal(string n, int v)
+animal::animal(string n, int v)
 {
 	name = n;
 	volume = v;
 	animalID++;
 }
 
-int Animal::get_id()
+int animal::get_id()
 {
 	return animalID;
 }
 
-int Animal::get_volume()
+int animal::get_volume()
 {
 	return volume;
 }
 
-void Animal::set_volume(int v)
+void animal::set_volume(int v)
 {
 	volume = v;
 }
 
-void Animal::set_name(string n)
+void animal::set_name(string n)
 {
 	name = n;
 }
 
-Animal::~Animal()
+animal::~animal()
 {
 
 }
