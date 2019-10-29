@@ -5,35 +5,30 @@
 
 using namespace std;
 
-int Hunter::nextID = 1000;
+int hunter::nextID = 1000;
 
-Hunter::Hunter(string n, int v):animal(n,v)
+hunter::hunter(string n, int v):animal(n,v)
 {
-	HunterID = nextID;
+	animalID = nextID;
 	nextID++;
 }
 
-void Hunter::set_kills(int killsH)
+void hunter::set_kills(int killsH)
 {
 	kills = killsH;
 }
 
-int Hunter::get_kills()
+int hunter::get_kills()
 {
 	return kills;
 }
 
-void Hunter::set_name(string n)
+string hunter::get_name()
 {
-	name = n;
+	return "Hunter:" + name;
 }
 
-string Hunter::get_name()
-{
-	return name;
-}
-
-Hunter::~Hunter()
+hunter::~hunter()
 {
 
 }

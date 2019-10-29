@@ -9,14 +9,14 @@ public:
 	vegie(string n, int v);
 	void set_favourite_food(string food);
 	string get_favourite_food();
+	string get_name();
 	~vegie();
 
 private:
 	string favourite_food;
-	string name;
-	int volume;
 	static int nextID;
-	int ID;
+	//int ID;
+	//string name;
 
 
 };

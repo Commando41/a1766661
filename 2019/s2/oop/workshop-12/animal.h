@@ -11,13 +11,10 @@ public:
 	void set_name(string n);
 	void set_volume(int v);
 	int get_volume();
-	int get_ID();
-	~animal();
-//protected:
+	int get_animalID();
+	virtual ~animal();
 
-private:
-	
-	//static int ID;
+protected:
 	string name;
 	int animalID;
 	int volume;

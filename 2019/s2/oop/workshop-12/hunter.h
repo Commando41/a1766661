@@ -4,22 +4,22 @@
 #include <string>
 using namespace std;
 
-class Hunter : public animal
+class hunter : public animal
 {
 public:
-	Hunter(string n, int v);
+	hunter(string n, int v);
 	int get_kills();
 	void set_kills(int killsH);
-	~Hunter();
+	~hunter();
 	string get_name();
-	void set_name(string n);
+	//void set_name(string n);
 
 private:
 	int kills;
 	static int nextID;
-	string name;
-	int volume;
-	int HunterID;
+	//string name;
+	//int volume;
+	//int HunterID;
 
 };
 
