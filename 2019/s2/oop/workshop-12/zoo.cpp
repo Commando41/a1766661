@@ -4,12 +4,7 @@
 #include "animal.h"
 #include "vegie.h"
 #include "hunter.h"
-
 using namespace std;
-
-//int* a = new int[10];
-//int** b = new int*[10];
-
 zoo::zoo(string n, int cows, int lions)
 {
 	number_of_animals = cows + lions;
@@ -45,5 +40,4 @@ animal **zoo::get_animals()
 
 zoo::~zoo()
 {
-
 }
