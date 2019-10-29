@@ -25,7 +25,7 @@ int hunter::get_kills()
 
 string hunter::get_name()
 {
-	return "Hunter:" + name;
+	return "Hunter: " + name;
 }
 
 hunter::~hunter()

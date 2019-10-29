@@ -25,7 +25,7 @@ string vegie::get_favourite_food()
 
 string vegie::get_name()
 {
-	return "Safe:" + name;
+	return "Safe: " + name;
 }
 
 vegie::~vegie()
