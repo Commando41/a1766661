@@ -9,6 +9,7 @@ int vegie::nextID = 0;
 
 vegie::vegie(string n, int v):animal(n,v)
 {
+	favourite_food = "grass";
 	animalID = nextID;
 	nextID++;
 }

@@ -15,7 +15,7 @@ hunter::hunter(string n, int v):animal(n,v)
 
 void hunter::set_kills(int killsH)
 {
-	kills = killsH;
+	kills += killsH;
 }
 
 int hunter::get_kills()
