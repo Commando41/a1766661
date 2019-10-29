@@ -4,39 +4,39 @@
 
 int animal::ID = 0;
 
-animal::animal(string n, int v)
+Animal::Animal(string n, int v)
 {
 	name = n;
 	volume = v;
 	animalID = ID++;
 }
 
-int animal::get_id()
+int Animal::get_id()
 {
 	return animalID
 }
 
-int animal::get_volume()
+int Animal::get_volume()
 {
 	return volume;
 }
 
-void animal::set_volume(int v)
+void Animal::set_volume(int v)
 {
 	volume = v;
 }
 
-void animal::set_name(string n)
+void Animal::set_name(string n)
 {
 	name = n;
 }
 
-string animal::get_name()
+string Animal::get_name()
 {
 	return name;
 }
 
-animal::~animal()
+Animal::~Animal()
 {
 
 }
