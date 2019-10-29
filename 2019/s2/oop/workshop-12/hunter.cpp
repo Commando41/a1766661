@@ -11,7 +11,7 @@ hunter::hunter(string n, int v):animal(n,v)
 {
 	animalID = nextID;
 	nextID++;
-	kills = 0;
+	//kills = 0;
 }
 
 void hunter::set_kills(int killsH)

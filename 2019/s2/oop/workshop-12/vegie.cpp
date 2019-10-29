@@ -12,7 +12,6 @@ vegie::vegie(string n, int v):animal(n,v)
 	favourite_food = "grass";
 	animalID = nextID;
 	nextID++;
-	kills=0;
 }
 
 void vegie::set_favourite_food(string food)
