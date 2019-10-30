@@ -6,7 +6,7 @@ class animal{
 	
 public:
 	animal(string n, int v);
-	int get_id();
+	int get_animalID();
 	virtual string get_name() = 0;
 	void set_name(string n);
 	void set_volume(int v);

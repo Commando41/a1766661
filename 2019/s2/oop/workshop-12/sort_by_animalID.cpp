@@ -9,10 +9,10 @@ void sort_by_animalID::sort(animal **animals, int n)
 	bool ascending = false;
 	while(ascending = false)
 	{
-		for(int i = 0; i < n; i++)
+		for(int i = 0; i < n-1; i++)
 		{
 			ascending = true;
-			if(animals[i]->get_id() > animals[i+1]->get_id())
+			if(animals[i]->get_animalID() > animals[i+1]->get_animalID())
 			{
 				temp = animals[i]; 
 				animals[i] = animals[i+1];
