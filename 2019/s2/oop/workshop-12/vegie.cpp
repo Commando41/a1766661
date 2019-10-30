@@ -31,5 +31,4 @@ string vegie::get_name()
 
 vegie::~vegie()
 {
-
 }
