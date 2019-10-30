@@ -10,7 +10,7 @@ animal::animal(string n, int v)
 
 }
 
-int animal::get_animalID()
+int animal::get_id()
 {
 	return animalID;
 }
