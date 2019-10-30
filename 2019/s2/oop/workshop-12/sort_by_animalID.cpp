@@ -7,7 +7,7 @@ void sort_by_animalID::sort(animal **animals, int n)
 {
 	animal *temp;
 	bool ascending = false;
-	while(ascending = false)
+	while(ascending == false)
 	{
 		for(int i = 0; i < n-1; i++)
 		{
