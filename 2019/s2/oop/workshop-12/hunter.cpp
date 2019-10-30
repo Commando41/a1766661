@@ -31,5 +31,4 @@ string hunter::get_name()
 
 hunter::~hunter()
 {
-
 }

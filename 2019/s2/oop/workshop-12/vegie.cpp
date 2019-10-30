@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int vegie::nextID = 0;
+int vegie::nextID = 100;
 
 vegie::vegie(string n, int v):animal(n,v)
 {

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include "animal.h"
-
+using namespace std;
 animal::animal(string n, int v)
 {
 	name = n;

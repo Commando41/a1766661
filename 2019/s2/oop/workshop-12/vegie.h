@@ -2,7 +2,7 @@
 #define VEGIE_H
 #include "animal.h"
 #include <string>
-
+using namespace std;
 class vegie : public animal
 {
 public:
