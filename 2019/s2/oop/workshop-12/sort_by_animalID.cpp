@@ -12,7 +12,7 @@ void sort_by_animalID::sort(animal **animals, int n)
 		for(int i = 0; i < n-1; i++)
 		{
 			ascending = true;
-			if(animals[i]->get_animalID() > animals[i+1]->get_animalID())
+			if(animals[i]->get_id() > animals[i+1]->get_id())
 			{
 				temp = animals[i]; 
 				animals[i] = animals[i+1];

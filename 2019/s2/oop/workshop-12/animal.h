@@ -11,7 +11,7 @@ public:
 	void set_name(string n);
 	void set_volume(int v);
 	int get_volume();
-	int get_animalID();
+//	int get_animalID();
 	virtual ~animal();
 
 protected:
