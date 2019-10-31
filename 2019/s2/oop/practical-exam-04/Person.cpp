@@ -36,4 +36,5 @@ string Person::get_occupation()
 	return occupation;
 }
 
+Person::~Person(){}
 
