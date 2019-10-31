@@ -36,5 +36,9 @@ string Person::get_occupation()
 	return occupation;
 }
 
+int Person::get_personID()
+{
+	return personID;
+}
 Person::~Person(){}
 

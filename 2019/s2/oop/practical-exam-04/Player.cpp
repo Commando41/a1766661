@@ -18,7 +18,7 @@ Player::Player(string n, int sl, int *list, int m):Person(n, "player", sl)
 	
 }
 
-int searchGame(int x)
+int Player::searchGame(int x)
 {
 	for(int i = 0; i < num_of_games; i++)
 	{
@@ -30,7 +30,7 @@ int searchGame(int x)
 	return -1;
 }
 
-int get_salary()
+int Player::get_salary()
 {
 	if(serviceLength < 20
 	{
