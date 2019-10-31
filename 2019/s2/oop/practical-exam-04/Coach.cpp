@@ -7,7 +7,7 @@ using namespace std;
 
 int Coach::nextID = 0;
 
-Coach::Coach(string n, int sl):Person(n,sl)
+Coach::Coach(string n, int sl):Person(n,"Coach", sl)
 {
 	personID = nextID;
 	nextID++;
