@@ -7,7 +7,6 @@ animal::animal(string n, int v)
 	name = n;
 	volume = v;
 	//animalID++;
-
 }
 
 int animal::get_animalID()

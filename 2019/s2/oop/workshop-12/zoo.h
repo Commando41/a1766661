@@ -15,7 +15,6 @@ public:
 	string get_name();
 	~zoo();
 
-
 private:
 	string name;
 	int number_of_animals;
