@@ -11,6 +11,7 @@ Coach::Coach(string n, int sl):Person(n,"Coach", sl)
 {
 	personID = nextID;
 	nextID++;
+	serviceLength = sl;
 }
 
 int get_salary()
