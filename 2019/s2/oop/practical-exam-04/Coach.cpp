@@ -7,16 +7,6 @@ using namespace std;
 
 int Coach::nextID = 0;
 
-Coach::Coach()
-{
-	salary = 0;
-	personID = nextID;
-	nextID++;
-	serviceLength = 0;
-	name = "";
-	occupation = "";
-}
-
 Coach::Coach(string n, int sl):Person(n,"Coach", sl)
 {
 	personID = nextID;

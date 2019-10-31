@@ -22,7 +22,7 @@ int Player::searchGame(int x)
 {
 	for(int i = 0; i < num_of_games; i++)
 	{
-		if(x == list[i])
+		if(x == time_eachg[i])
 		{
 			return i;
 		}
