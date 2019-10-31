@@ -11,13 +11,13 @@ class Player : Person
 {
 	public:
 		Player(string n, int sl, int *list, int m);
-		int searchGame(int x)
+		int searchGame(int x);
 		int get_salary();
 		~Player();
 	private:
-		static nextID;
+		static int nextID;
 		int num_of_games;
-		*time_eachg;
+		int *time_eachg;
 };
 
 #endif
