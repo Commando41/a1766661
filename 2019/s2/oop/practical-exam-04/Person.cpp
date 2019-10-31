@@ -49,7 +49,7 @@ int Person::get_personID()
 	return personID;
 }
 
-int Person::get_srviceLength(){
+int Person::get_serviceLength(){
 	return serviceLength;
 }
 

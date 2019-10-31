@@ -16,7 +16,7 @@ Team::Team()
 		{
 			team[i] = new Coach("Larry","Coach",50);
 		}else{
-			team[i] = new Player("Harry", "Coach", 20);
+			team[i] = new Player("Harry", "Player", 20);
 		}
 	}
 }

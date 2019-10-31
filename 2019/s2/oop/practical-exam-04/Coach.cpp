@@ -11,10 +11,14 @@ Coach::Coach()
 {
 	personID = nextID;
 	nextID++;
+	occupation = "Coach";
 }
 
-Coach::Coach(string n, int sl):Person(n,"Coach", sl)
+Coach::Coach(string n, int sl)
 {
+	name = n;
+	serviceLength = sl;
+	occupation = "Coach";
 	personID = nextID;
 	nextID++;
 }
