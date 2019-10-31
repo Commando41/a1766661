@@ -14,7 +14,7 @@ Coach::Coach(string n, int sl):Person(n,"Coach", sl)
 	serviceLength = sl;
 }
 
-int get_salary()
+int Coach::get_salary()
 {
 	if(serviceLength < 15)
 	{

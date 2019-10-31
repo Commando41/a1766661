@@ -18,7 +18,7 @@ class Person
 		int get_personID();
 		virtual ~Person();
 
-	//protected:
+	protected:
 		string name;
 		string occupation;
 		int salary;
