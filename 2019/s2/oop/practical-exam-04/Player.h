@@ -10,6 +10,7 @@ using namespace std;
 class Player : Person
 {
 	public:
+		Player();
 		Player(string n, int sl, int *list, int m);
 		int searchGame(int x);
 		int get_salary();

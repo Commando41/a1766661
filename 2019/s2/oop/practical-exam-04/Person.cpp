@@ -4,16 +4,13 @@
 
 using namespace std;
 
+Person::Person(){}
+
 Person::Person(string n, string o, int sl)
 {
 	name = n;
 	occupation = o;
-	if(sl < 0)
-	{
-	salary = sl*-1;
-	}else{
-	salary = sl;
-	}
+	serviceLength = sl;
 }
 
 void Person::set_name(string n)
@@ -31,7 +28,7 @@ void Person::set_salary(int sl)
 	
 	if(sl < 0)
 	{
-	salary = 0;
+	salary = sl*-1;
 	}else{
 	salary = sl;
 	}
@@ -51,5 +48,12 @@ int Person::get_personID()
 {
 	return personID;
 }
+
+int Person::get_srviceLength(){
+	return serviceLength;
+}
+
+ 
+
 Person::~Person(){}
 

@@ -8,6 +8,7 @@ using namespace std;
 class Person
 {
 	public:
+		Person();
 		Person(string n, string o, int sl);
 		void set_name(string n);
 		void set_occupation(string o);
@@ -17,6 +18,7 @@ class Person
 		virtual int get_salary() = 0;
 		int get_personID();
 		virtual ~Person();
+		int get_serviceLength();
 
 	protected:
 		string name;

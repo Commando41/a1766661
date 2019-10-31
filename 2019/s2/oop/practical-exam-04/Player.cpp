@@ -6,13 +6,17 @@
 
 using namespace std;
 
-int Player::nextID = 0;
+int Player::nextID = 1000;
 
-Player::Player(string n, int sl, int *list, int m):Person(n, "player", sl)
+Player::Player(){
+	personID = nextID;
+	nextID++;
+}
+
+Player::Player(string n, int sl, int *list, int m):Person::Person(n, "player", sl)
 {
 	personID = nextID;
 	nextID++;
-	serviceLength = sl;
 	time_eachg = list;
 	num_of_games = m;
 	
