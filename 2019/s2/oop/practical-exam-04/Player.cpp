@@ -32,7 +32,7 @@ int Player::searchGame(int x)
 
 int Player::get_salary()
 {
-	if(serviceLength < 20
+	if(serviceLength < 20)
 	{
 		return salary;
 	}else{
