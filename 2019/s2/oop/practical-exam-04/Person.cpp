@@ -14,7 +14,6 @@ Person::Person(string n, string o, int sl)
 	}else{
 	salary = sl;
 	}
-	salary
 }
 
 void Person::set_name(string n)
