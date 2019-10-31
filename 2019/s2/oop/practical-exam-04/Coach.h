@@ -10,10 +10,13 @@ class Coach : public Person
 {
 	public:
 		Coach(string , int sl);
+		int get_salary();
 		~Coach();
 
 	private:
 		static int nextID;
+		//int serviceLength;
+		//int salary;
 };
 
 #endif
