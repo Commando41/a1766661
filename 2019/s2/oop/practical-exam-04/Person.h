@@ -14,7 +14,7 @@ class Person
 		void set_salary(int sl);
 		string get_name();
 		string get_occupation();
-		int get_salary() = 0;
+		virtual int get_salary() = 0;
 		int get_personID();
 		~Person();
 
