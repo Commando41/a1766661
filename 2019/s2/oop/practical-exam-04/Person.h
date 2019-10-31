@@ -21,7 +21,7 @@ class Person
 	protected:
 		string name;
 		string occupation;
-		int salary = 0;
+		int salary;
 		int serviceLength;
 		int personID;
 };

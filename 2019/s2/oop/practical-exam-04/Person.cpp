@@ -10,7 +10,7 @@ Person::Person(string n, string o, int sl)
 	occupation = o;
 	if(sl < 0)
 	{
-	salary = 0;
+	salary = sl*-1;
 	}else{
 	salary = sl;
 	}
