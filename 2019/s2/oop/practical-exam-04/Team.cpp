@@ -14,9 +14,9 @@ Team::Team()
 	{
 		if(i == 0 || i== 4)
 		{
-			team[i] = new Coach("Larry",50);
+			team[i] = new Coach("Larry","Coach",50);
 		}else{
-			team[i] = new Player("Harry" , 20);
+			team[i] = new Player("Harry", "Coach", 20);
 		}
 	}
 }

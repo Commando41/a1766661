@@ -12,7 +12,10 @@ Coach::Coach(string n, int sl):Person(n,"Coach", sl)
 	personID = nextID;
 	nextID++;
 	serviceLength = sl;
-	salary = 0;
+	if(sl < 0)
+	{
+		salary = 0;
+	}
 }
 
 int Coach::get_salary()
