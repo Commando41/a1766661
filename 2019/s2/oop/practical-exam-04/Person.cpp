@@ -8,7 +8,13 @@ Person::Person(string n, string o, int sl)
 {
 	name = n;
 	occupation = o;
+	if(sl < 0)
+	{
+	salary = 0;
+	}else{
 	salary = sl;
+	}
+	salary
 }
 
 void Person::set_name(string n)
@@ -23,7 +29,11 @@ void Person::set_occupation(string o)
 
 void Person::set_salary(int sl)
 {
+	if(sl < 0){
+	salary = 0;
+	}else{
 	salary = sl;
+	}
 }
 
 string Person::get_name()
