@@ -11,14 +11,14 @@ Coach::Coach()
 {
 	personID = nextID;
 	nextID++;
-	occupation = "Coach";
+	occupation = "coach";
 }
 
-Coach::Coach(string n, int sl)
+Coach::Coach(string n, int sl):Person(n,"coach",sl)
 {
-	name = n;
+	//name = n;
 	serviceLength = sl;
-	occupation = "Coach";
+	occupation = "coach";
 	personID = nextID;
 	nextID++;
 }
@@ -30,7 +30,7 @@ int Coach::get_salary()
 		return salary;
 	}else
 	{
-		return salary*3;
+		return 3*salary;
 	}
 }
 

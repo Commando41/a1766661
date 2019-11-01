@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include "Person.h"
-
+#include <cmath>
 using namespace std;
 
 Person::Person(){}
@@ -10,7 +10,7 @@ Person::Person(string n, string o, int sl)
 {
 	name = n;
 	occupation = o;
-	serviceLength = sl;
+	serviceLength = abs(sl);
 }
 
 void Person::set_name(string n)
