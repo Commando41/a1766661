@@ -8,7 +8,7 @@ int main()
 	string input;
 	//cin >> input;
 	getline(cin,input);
-	cout << input << endl;
+	//cout << input << endl;
 	Palindrome *word = new Palindrome(input);
 	word->change();
 	word->remove();
