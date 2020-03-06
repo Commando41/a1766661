@@ -4,7 +4,7 @@ using namespace std;
 #include "Palindrome.h"
 int main()
 {
-	cout << "Please enter a word" << endl;
+	//cout << "Please enter a word" << endl;
 	string input;
 	//cin >> input;
 	getline(cin,input);
