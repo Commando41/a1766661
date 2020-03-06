@@ -4,6 +4,7 @@ using namespace std;
 #include "Palindrome.h"
 int main()
 {
+	cout << "Please enter a word" << endl;
 	string input;
 	//cin >> input;
 	getline(cin,input);
@@ -13,11 +14,11 @@ int main()
 	word->remove();
 	if(word->IsPalindrome() != 0)
 	{
-		cout << "It is a Palindrome" << endl;
+		cout << "Yes" << endl;
 	}else{
-		cout << "It is not a Palindrome" << endl;	
+		cout << "No" << endl;	
 	}	
-
+	delete word;
 
 	return 0;
 }
