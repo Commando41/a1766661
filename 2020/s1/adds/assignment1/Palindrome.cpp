@@ -21,7 +21,7 @@ void Palindrome::remove()
 			index++;
 		}
 	}
-	cout << phraseRM << endl;
+	//cout << phraseRM << endl;
 }
 
 void Palindrome::change()
