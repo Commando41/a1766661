@@ -1,0 +1,1 @@
+java -jar ~/vnu.jar --also-check-css validatethis1.html validatethis2.html style.css
