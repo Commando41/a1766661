@@ -15,7 +15,6 @@ Referee::Referee()
 void Referee::matchCalc(Human *player, Computer *AI)
 {
 	Pchoice = player->value();
-	cout << "player choice is: " << Pchoice <<endl;
 	Cchoice = AI->chosed();
 	//len = atoi(Pchoice[0]);  //atoi converts the char element in the string to integer
 	len = Pchoice[0] - 46;
