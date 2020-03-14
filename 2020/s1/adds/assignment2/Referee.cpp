@@ -23,12 +23,12 @@ void Referee::matchCalc(Human *player, Computer *AI)
 	{
 		if(Pchoice[i] == 'S' && Cchoice == 1 || Pchoice[i] == 'R' && Cchoice == 2 || Pchoice[i] == 'P' && Cchoice == 3)
 		{
-			matches = matches + "L";
+			matches = matches + "L ";
 		}else if (Pchoice[i] == 'R' && Cchoice == 1 || Pchoice[i] == 'P' && Cchoice == 2 || Pchoice[i] == 'S' && Cchoice == 3)
 		{
-			matches = matches + "T";
+			matches = matches + "T ";
 		}else{
-			matches = matches + "W";
+			matches = matches + "W ";
 		}
 	}
 }
