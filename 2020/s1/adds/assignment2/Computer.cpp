@@ -8,10 +8,10 @@ Computer::Computer()
 
 void Computer::makeDecision()
 {
-	decided = 1;
+	decided = decided + 'R';
 }
 
-int Computer::chosed()
+char Computer::chosed()
 {
 	return decided;
 }

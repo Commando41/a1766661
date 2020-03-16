@@ -8,8 +8,8 @@ class Computer
 	public:
 	Computer();
 	void makeDecision();
-	int chosed();
-	int decided;
+	char chosed();
+	char decided;
 	~Computer();	
 };
 #endif

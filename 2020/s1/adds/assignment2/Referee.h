@@ -13,7 +13,7 @@ class Referee
 		string matchResults();
 		string matches;
 		string Pchoice;
-		int Cchoice;
+		char Cchoice;
 		int len;
 		~Referee();
 };
