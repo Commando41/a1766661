@@ -9,18 +9,18 @@ class Set{
 		void addElement(int n);
 		void removeElement(int n);
 		double returnAverage();
-	    int returnMaximum();
+	        int returnMaximum();
 		int returnMinimum();
 		~Set();
 	private:
-		vector<unsigned int> TheSet;
-		vector<unsigned int> ThePropSet;
+		vector<int> TheSet;
+		vector<int> ThePropSet;
 		double average;
-		unsigned int SMax;
-		unsigned int Min;
-		unsigned int FMax;
-		unsigned int SetLength;
-		unsigned int PropSetLength;
+		int SMax;
+		int Min;
+		int FMax;
+		int SetLength;
+		int PropSetLength;
 
 };
 #endif

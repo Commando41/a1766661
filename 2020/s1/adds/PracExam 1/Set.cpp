@@ -39,13 +39,13 @@ double Set::returnAverage()
 	{
 		for(int i = 0; i < SetLength; i++)
 		{
-			if(TheSet[i]>FMax && j = 1)
+			if(TheSet[i]>FMax && j == 1)
 			{
 				FMax = TheSet[i];
 			}
-			if(TheSet[i] ~= FMax && j == 2)
+			if(TheSet[i] != FMax && j == 2)
 			{
-					ThePropSet.push_back(TheSet[i]);
+				ThePropSet.push_back(TheSet[i]);
 			}
 		}
 	}
@@ -63,7 +63,7 @@ double Set::returnAverage()
 	}		
 }
 
-unsigned int Set::returnMaximum()
+int Set::returnMaximum()
 {
 	if(ThePropSet.empty() == 0)
 	{
@@ -81,7 +81,7 @@ unsigned int Set::returnMaximum()
 	}
 }
 
-unsigned int Set::returnMinimum()
+int Set::returnMinimum()
 {
 	if(ThePropSet.empty() == 0)
 	{

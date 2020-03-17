@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Set.h"
 #include <string>
+#include <string.h>
+#include <cstring>
 using namespace std;
 
 int main()
@@ -10,9 +12,9 @@ int main()
 
 	cin >> inputs;
 	Set *aSet = new Set();
-	for(int i = 0; i < inputs.length(); i++)
+	for(int i = 0; i < inputs.size(); i++)
 	{
-		if(inputs[i] ~= " ")
+		if(inputs[i] != 32)
 		{
 		aSet->addElement(inputs[i]-48);		
 		}
