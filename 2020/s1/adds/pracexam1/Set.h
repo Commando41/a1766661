@@ -14,13 +14,10 @@ class Set{
 		~Set();
 	private:
 		vector<int> TheSet;
-		vector<int> ThePropSet;
 		double average;
-		int SMax;
+		int Max;
 		int Min;
-		int FMax;
 		int SetLength;
-		int PropSetLength;
 
 };
 #endif

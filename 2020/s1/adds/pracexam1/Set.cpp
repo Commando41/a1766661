@@ -28,7 +28,6 @@ bool isin = 0;
 
 void Set::removeElement(int n)
 {
-cout << SetLength;
 	for(int i = 0; i < SetLength; i++)
 	{
 		if(TheSet[i] == n)
@@ -46,12 +45,11 @@ double Set::returnAverage()
 	if(TheSet.empty() == 0)
 	{
 		average = 0;
-		PropSetLength = TheSet.size();
-		for(int i = 0; i < PropSetLength; i++)
+		for(int i = 0; i < SetLength; i++)
 		{
 			average += TheSet[i];
 		}
-		return average/PropSetLength;
+		return average/SetLength;
 	}else{
 		return -1;
 	}		
@@ -61,15 +59,15 @@ int Set::returnMaximum()
 {
 	if(TheSet.empty() == 0)
 	{
-		SMax = 0;
-		for(int i = 1; i < PropSetLength; i++)
+		Max = 0;
+		for(int i = 1; i < SetLength; i++)
 		{
-			if(ThePropSet[i]>SMax)
+			if(TheSet[i]>Max)
 			{
-				SMax = ThePropSet[i];
+				Max = TheSet[i];
 			}
 		}
-		return SMax;
+		return Max;
 	}else{
 	return -1;
 	}
@@ -80,7 +78,7 @@ int Set::returnMinimum()
 	if(TheSet.empty() == 0)
 	{
 		Min = TheSet[0];
-		for(int i = 1; i < PropSetLength; i++)
+		for(int i = 1; i < SetLength; i++)
 		{
 			if(TheSet[i]<Min)
 			{

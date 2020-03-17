@@ -6,37 +6,32 @@
 #include <sstream>
 using namespace std;
 
-int main(int argc, char** args) {
-std::string input;
-getline(cin, input);
-Set aSet;
-stringstream str_strm;
-str_strm << input;
-string temp_str;
-int temp_int, max, len = 0;
-vector<int> record;
+int main() {
+	std::string input;
+	getline(cin, input);
+	Set aSet;
+	stringstream str_strm;
+	str_strm << input;
+	string temp_str;
+	int temp_int, max = 0;
 
-while(!str_strm.eof()) {
-str_strm >> temp_str;
-if(stringstream(temp_str) >> temp_int) {
-aSet.addElement(temp_int);
-record.push_back(temp_int);
-len+=1;
-}
-}
-max = record[0];
-for(int i = 1; i < len; i++)
-{
-	if(record[i] > max)
+	while(!str_strm.eof()) 
 	{
-		max = record[i];
+		str_strm >> temp_str;
+		if(stringstream(temp_str) >> temp_int) 
+		{
+			aSet.addElement(temp_int);
+			if(temp_int > max)
+			{
+				max = temp_int;
+			}
+		}
 	}
-}
-aSet.removeElement(max);
-cout << aSet.returnAverage() << " ";
-cout << aSet.returnMaximum() << " ";
-cout << aSet.returnMinimum() << endl;
 
+	aSet.removeElement(max);
+	cout << aSet.returnAverage() << " ";
+	cout << aSet.returnMaximum() << " ";
+	cout << aSet.returnMinimum() << endl;
 
 return 0;
 }
