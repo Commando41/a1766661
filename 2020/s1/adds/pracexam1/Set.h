@@ -13,6 +13,7 @@ class Set{
 		int returnMinimum();
 		~Set();
 	private:
+		//Keep all atributes private since they should only be used by the object 
 		vector<int> TheSet;
 		double average;
 		int Max;
