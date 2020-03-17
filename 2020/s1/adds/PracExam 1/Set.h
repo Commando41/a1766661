@@ -9,7 +9,7 @@ class Set{
 		void addElement(int n);
 		void removeElement(int n);
 		double returnAverage();
-	        int returnMaximum();
+	    int returnMaximum();
 		int returnMinimum();
 		~Set();
 	private:
