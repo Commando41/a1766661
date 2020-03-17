@@ -5,27 +5,29 @@ using namespace std;
 
 Set::Set()
 {
-
+	SetLength = 0;
 }
 
 void Set::addElement(int n)
 {
-	for(int i = 0; i < TheSet.size(); i++)
-	{	if(TheSet[i] == n)
-		{
-			return;
-		}
-	}
+//	for(int i = 0; i < SetLength; i++)
+//	{	if(TheSet[i] == n)
+//		{
+//			return;
+//		}
+//	}
 	TheSet.push_back(n);
+	SetLength++;
 }
 
 void Set::removeElement(int n)
 {
-	for(int i = 0; i < TheSet.size(); i++)
+	for(int i = 0; i < SetLength; i++)
 	{
 		if(TheSet[i] == n)
 		{
 			TheSet.erase(TheSet.begin()+i);
+			SetLength--;
 			return;
 		}
 	}

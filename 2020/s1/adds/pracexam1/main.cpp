@@ -13,19 +13,22 @@ Set *aSet = new Set();
 stringstream str_strm;
 str_strm << input;
 string temp_str;
-int temp_int;
+int temp_int, len = 0;
 vector<int> record;
+
 while(!str_strm.eof()) {
 str_strm >> temp_str;
 if(stringstream(temp_str) >> temp_int) {
 aSet->addElement(temp_int);
 record.push_back(temp_int);
-for(int m = 0; m < (record.size()-1); m++)
+len++;
+for(int m = 0; m < len-1; m++)
 {
 	if(record[m] == temp_int)
 	{
 		aSet->removeElement(temp_int);
 		record.pop_back();
+		len--;
 	}
 }
 }
