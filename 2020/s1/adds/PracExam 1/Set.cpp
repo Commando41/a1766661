@@ -25,7 +25,7 @@ void Set::removeElement(int n)
 	{
 		if(TheSet[i] == n)
 		{
-			TheSet.erase(i);
+			TheSet.erase(TheSet.begin()+i);
 		}
 	}
 
