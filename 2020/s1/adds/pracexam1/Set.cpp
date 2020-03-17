@@ -10,24 +10,31 @@ Set::Set()
 
 void Set::addElement(int n)
 {
-//	for(int i = 0; i < SetLength; i++)
-//	{	if(TheSet[i] == n)
-//		{
-//			return;
-//		}
-//	}
-	TheSet.push_back(n);
-	SetLength++;
+
+bool isin = 0;
+
+	for(int i = 0; i < SetLength; i++)
+	{	if(TheSet[i] == n)
+		{
+			isin = 1;
+		}
+	}
+
+	if (isin == 0){
+		TheSet.push_back(n);
+		SetLength+=1;
+	}
 }
 
 void Set::removeElement(int n)
 {
+cout << SetLength;
 	for(int i = 0; i < SetLength; i++)
 	{
 		if(TheSet[i] == n)
 		{
 			TheSet.erase(TheSet.begin()+i);
-			SetLength--;
+			SetLength-=1;
 			return;
 		}
 	}
@@ -36,29 +43,13 @@ void Set::removeElement(int n)
 
 double Set::returnAverage()
 {
-	FMax = 0;
-	SetLength = TheSet.size();
-	for(int j = 1; j <= 2; j++)
-	{
-		for(int i = 0; i < SetLength; i++)
-		{
-			if(TheSet[i]>FMax && j == 1)
-			{
-				FMax = TheSet[i];
-			}
-			if(TheSet[i] != FMax && j == 2)
-			{
-				ThePropSet.push_back(TheSet[i]);
-			}
-		}
-	}
-	if(ThePropSet.empty() == 0)
+	if(TheSet.empty() == 0)
 	{
 		average = 0;
-		PropSetLength = ThePropSet.size();
+		PropSetLength = TheSet.size();
 		for(int i = 0; i < PropSetLength; i++)
 		{
-			average += ThePropSet[i];
+			average += TheSet[i];
 		}
 		return average/PropSetLength;
 	}else{
@@ -68,7 +59,7 @@ double Set::returnAverage()
 
 int Set::returnMaximum()
 {
-	if(ThePropSet.empty() == 0)
+	if(TheSet.empty() == 0)
 	{
 		SMax = 0;
 		for(int i = 1; i < PropSetLength; i++)
@@ -86,14 +77,14 @@ int Set::returnMaximum()
 
 int Set::returnMinimum()
 {
-	if(ThePropSet.empty() == 0)
+	if(TheSet.empty() == 0)
 	{
-		Min = ThePropSet[0];
+		Min = TheSet[0];
 		for(int i = 1; i < PropSetLength; i++)
 		{
-			if(ThePropSet[i]<Min)
+			if(TheSet[i]<Min)
 			{
-				Min = ThePropSet[i];
+				Min = TheSet[i];
 			}
 		}
 		return Min;

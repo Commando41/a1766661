@@ -9,31 +9,34 @@ using namespace std;
 int main(int argc, char** args) {
 std::string input;
 getline(cin, input);
-Set *aSet = new Set();
+Set aSet;
 stringstream str_strm;
 str_strm << input;
 string temp_str;
-int temp_int, len = 0;
+int temp_int, max, len = 0;
 vector<int> record;
 
 while(!str_strm.eof()) {
 str_strm >> temp_str;
 if(stringstream(temp_str) >> temp_int) {
-aSet->addElement(temp_int);
+aSet.addElement(temp_int);
 record.push_back(temp_int);
-len++;
-for(int m = 0; m < len-1; m++)
+len+=1;
+}
+}
+max = record[0];
+for(int i = 1; i < len; i++)
 {
-	if(record[m] == temp_int)
+	if(record[i] > max)
 	{
-		aSet->removeElement(temp_int);
-		record.pop_back();
-		len--;
+		max = record[i];
 	}
 }
-}
-temp_str = "";
-}
-cout << aSet->returnAverage() << " " << aSet->returnMaximum() << " " << aSet->returnMinimum() << endl;
+aSet.removeElement(max);
+cout << aSet.returnAverage() << " ";
+cout << aSet.returnMaximum() << " ";
+cout << aSet.returnMinimum() << endl;
+
+
 return 0;
 }
