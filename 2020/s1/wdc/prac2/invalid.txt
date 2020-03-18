@@ -1,4 +1,4 @@
-java -jar ~/vnu.jar validatethis1.html validatethis2.html ...
+java -jar ~/vnu.jar validatethis1.html validatethis2.html
 
 java -jar ~/vnu.jar http://w3c.org/
 
