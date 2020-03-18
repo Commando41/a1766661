@@ -1,7 +1,0 @@
-"file:/home/ubuntu/wdc/prac2/validatethis1.html":1.1-1.1: error: Non-space characters found without seeing a doctype first. Expected “<!DOCTYPE html>”.
-"file:/home/ubuntu/wdc/prac2/validatethis1.html":1.1-1.1: error: Element “head” is missing a required instance of child element “title”.
-"file:/home/ubuntu/wdc/prac2/validatethis1.html":1.2-1.16: error: Stray doctype.
-"file:/home/ubuntu/wdc/prac2/validatethis1.html":2.1-2.19: error: Stray start tag “html”.
-"file:/home/ubuntu/wdc/prac2/validatethis1.html":2.1-2.19: error fatal: Cannot recover after last error. Any further errors will be ignored.
-"file:/home/ubuntu/wdc/prac2/validatethis1.html":1.1-1.1: info warning: Consider adding a “lang” attribute to the “html” start tag to declare the language of this document.
-"file:/home/ubuntu/wdc/prac2/validate.css":6.2-7.1: error: CSS: Parse Error.
