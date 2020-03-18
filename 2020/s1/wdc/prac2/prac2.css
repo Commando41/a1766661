@@ -55,9 +55,11 @@ h3
 body
 {
     background-color: ghostwhite;
-    background-image: url("rect.png");
-    background-size: 97px, 67px, 37px;
-    background-repeat: repeat
-                       repeat
-                       repeat;
+    background-image: url("rect.png"),
+                      url("rect.png"),
+                      url("rect.png");
+    background-size: 97px,
+                     67px,
+                     37px;
+
 }
