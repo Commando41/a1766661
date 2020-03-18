@@ -1,5 +1,5 @@
-java -jar ~/vnu.jar webpage1.html webpage2.html ...
+java -jar ~/vnu.jar validatethis1.html validatethis2.html ...
 
 java -jar ~/vnu.jar http://w3c.org/
 
-java -jar ~/vnu.jar --also-check-css validatethis1.html validatethis2.html style.css
+java -jar ~/vnu.jar --also-check-css validatethis1.html validatethis2.html validate.css
