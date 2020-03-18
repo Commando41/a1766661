@@ -63,3 +63,23 @@ body
                      37px;
 
 }
+
+span
+{
+
+}
+
+div
+{
+    background-color:white;
+}
+
+div p span.blue
+{
+    color:blue;
+}
+
+div p span.fancy
+{
+    font-family:cursive;
+}
