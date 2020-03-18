@@ -1,9 +1,61 @@
-h1{font-family:Sans-Serif;}
-p{font-family:serif;}
-a{color:darkgreen;}
-del{color:grey;}
-mark{color:darkblue; background-color:pink;}
-h2{text-align:left; font-family:Sans-Serif;}
-pre{font-family:monospace;}
-h3{color:rgba(0,0,139,0.8);}
-.transparent-text{color:rgba(0,0,0,0.5)}
+h1
+{
+    font-family:Sans-Serif;
+
+}
+
+p
+{
+    font-family:serif;
+
+}
+
+a
+{
+    color:darkgreen;
+
+}
+
+del
+{
+    color:grey;
+
+}
+
+mark
+{
+    color:darkblue; background-color:pink;
+
+}
+
+h2
+{
+    text-align:left; font-family:Sans-Serif;
+
+}
+
+pre
+{
+    font-family:monospace;
+
+}
+
+h3
+{
+    color:rgba(0,0,139,0.8);
+
+}
+
+.transparent-text
+{
+    color:rgba(0,0,0,0.5);
+
+}
+
+body
+{
+    background-color: ghostwhite;
+    background-image: url(rect_png);
+    background-size: 97px, 67px, 37px;
+    background-repeat: repeat;
+}
