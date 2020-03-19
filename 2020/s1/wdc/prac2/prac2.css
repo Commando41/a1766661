@@ -1,7 +1,6 @@
 h1
 {
-    font-family:Sans-Serif;
-
+    font-family: Sans-Serif;
 }
 
 p
@@ -30,7 +29,8 @@ mark
 
 h2
 {
-    text-align:left; font-family:Sans-Serif;
+    text-align:left;
+    font-family: Sans-Serif;
 
 }
 
@@ -71,9 +71,10 @@ span
 
 div
 {
-    background-color:white;
-    border: 1px darkgrey;
+    background-color: white;
+    border: 1px solid darkgrey;
     border-radius: 8px;
+
 
 }
 
@@ -87,3 +88,38 @@ div p span.fancy
     font-family:cursive;
 }
 
+.red-border
+{
+    border:1px solid  red;
+}
+
+.red-outline
+{
+    outline: 1px solid red;
+}
+
+.red
+{
+    border: 1px solid red;
+    border-radius: 0px;
+}
+
+div.blue
+{
+    border: 1px solid blue;
+    border-radius: 0px;
+
+}
+
+.red-rounded-border
+{
+    border-color: red;
+    border-radius: 8px 8px 0px 0px;
+    border-bottom: none;
+}
+
+.blue-rounded-border
+{
+    border-color: blue;
+    border-radius: 0px 0 8px 8px;
+}
