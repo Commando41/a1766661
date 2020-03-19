@@ -123,3 +123,45 @@ div.blue
     border-color: blue;
     border-radius: 0px 0 8px 8px;
 }
+
+.outer1
+{
+    margin:0px;
+    padding:0px;
+    background-color: blue;
+    border: 1px solid red;
+}
+
+.inner-1
+{
+    margin: 10px 20px;
+    padding: 12px;
+    height: 200px;
+    width: 700px;
+    background-color: yellow;
+    text-align:right;
+    border: 1px solid red;
+}
+
+.outer2
+{
+    margin-top: 20px;
+    padding: 0px;
+    background-color: blue;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.inner-2
+{
+    margin: 0 auto;
+    padding: 12px;
+    height: 200px;
+    width: 700px;
+    background-color: yellow;
+    text-align:right;
+    height: 400px;
+    width: 400px;
+    border: 1px solid red;
+    position: center;
+}
