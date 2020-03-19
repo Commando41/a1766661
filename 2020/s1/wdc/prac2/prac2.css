@@ -72,6 +72,9 @@ span
 div
 {
     background-color:white;
+    border: 1px darkgrey;
+    border-radius: 8px;
+
 }
 
 div p span.blue
@@ -83,3 +86,4 @@ div p span.fancy
 {
     font-family:cursive;
 }
+
