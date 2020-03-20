@@ -134,8 +134,8 @@ div.blue
 {
     margin: 10px 20px 10px 20px;
     padding: 12px;
-    height: 177px;
-    width: 667px;
+    height: 200px;
+    width: 700x;
     background-color: yellow;
     text-align:right;
     border: 1px solid red;
@@ -156,8 +156,9 @@ div.blue
     padding: 12px;
     background-color: yellow;
     text-align: right;
-    height: 387px;
-    width: 387px;
+    height: 400px;
+    width: 400px;
     border: 1px solid red;
     border-radius: 0px 0px 0px 0px;
+    box-sizing: border-box;
 }
