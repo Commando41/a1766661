@@ -2,41 +2,41 @@
 <html lang="en">
 
     <head>
-        
+
         <title>Practical Excercise 3 - Part 3</title>
         <style>
-            
+
             body {
                 font-family: sans-serif;
             }
-            
+
             .container {
                 margin: 0;
                 padding: 0;
             }
-            
+
             .left {
                 float: left;
             }
-            
+
             .right {
                 float: right;
             }
-            
+
             .controls {
                 width: 240px;
             }
-            
+
             .date {
                 font-size: 0.8em;
                 font-weight: bold;
                 color: grey;
             }
-            
+
             h1,h2,h3 {
                 font-family: serif;
             }
-        
+
             #mcount {
                 background-color: cornflowerblue;
                 font-size: 3em;
@@ -46,28 +46,28 @@
                 height: 100px;
                 float: left;
             }
-            
+
             #posts {
                 border: 1px solid darkseagreen;
                 padding: 10px;
                 margin: 0px 10px 10px 150px;
                 min-height: 100px;
             }
-            
+
             hr {
                 clear: both;
             }
-        
+
         </style>
-        
+
     </head>
 
     <body>
-        
+
         <div id="main" class="container">
             <button class="right">MENU</button>
             <h1>Part 3 - Javascript Playground</h1>
-            <div id="mcount"></div>
+            <div id="mcount" onmouseover="addOne()"></div>
             <div id="posts"></div>
             <hr />
             <textarea rows="4" cols="60">Type your text here...</textarea>
@@ -78,7 +78,7 @@
                 <input type="radio" name="color" value="red" /> Red<br />
                 <button>Post</button>
             </div>
-            <div class="controls left"> 
+            <div class="controls left">
                 <input type="range" name="visible" min="1" max="10" value="10"/><br />
                 <input type="checkbox" name="style" value="bold" /> Bold<br />
                 <input type="checkbox" name="style" value="italic" /> Italic<br />
@@ -88,13 +88,14 @@
             </div>
             <hr />
         </div>
-        
+
         <div id="menu" class="container" style="display:none;">
             <button class="right">BACK</button>
             <p>&nbsp;</p>
             <span>Background Color:</span><input type="text">
         </div>
-        
+        <script src="task3.js"></script>
+
     </body>
-    
+
 </html>
