@@ -2,4 +2,3 @@
 
 echo $1 | tr '[a-z]' '[x-za-w]'
 
-echo $2 | tr '[A-Z]' '[X-ZA-W]'
