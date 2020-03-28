@@ -1,4 +1,6 @@
 #!/bin/bash
 
-echo $1 | tr '[a-z]' '[x-za-w]'
+#Acquire the shifting parameter
+n = $1
+
 
