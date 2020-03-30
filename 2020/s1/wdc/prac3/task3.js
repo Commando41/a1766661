@@ -22,16 +22,15 @@ function postStuff()
 
 }
 
-function hide()
+function hideMain()
 {
-    var m = document.getElementById("main");
-    var l = document.getElementById("menu");
-    if(m.style.display === "block")
-    {
-        m.style.display = "none";
-        l.style.display = "block";
-    }else{
-        m.style.display = "block";
-        l.style.display = "none";
-    }
+    document.getElementById("main").style.display = "none";
+    document.getElementById("menu").style.display = "block";
+
+}
+
+function hideMenu()
+{
+    document.getElementById("menu").style.display = "none";
+    document.getElementById("main").style.display = "block";
 }
