@@ -44,3 +44,8 @@ function hideMenu()
     document.getElementById("menu").style.display = "none";
     document.getElementById("main").style.display = "block";
 }
+
+function changeBackColor()
+{
+    document.body.style.background = document.getElementById("back").value;
+}
