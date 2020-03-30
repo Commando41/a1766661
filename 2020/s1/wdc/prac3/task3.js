@@ -9,17 +9,27 @@ function addOne()
 
 function postStuff()
 {
-
+    var loop = document.getElementsByName("quantity")[0].value;
+    for(let o = 1; o <= loop; o++)
+    {
     var post_con = document.createElement("p");
     post_con.className = "post-content";
     var post_t = document.createElement("pre");
     post_t.className = "post-time";
     post_t.innerHTML = new Date();
     post_con.innerHTML = document.getElementsByClassName("postText")[0].value;
-    var post_text = document.getElementById("posts");
-    post_text.appendChild(post_t);
-    post_text.appendChild(post_con);
+    var coloring = document.getElementsByName("color");
 
+    if(coloring[0].checked == true)
+    {
+        post_con.style.color=coloring[0].value;
+    }else if(coloring[1].checked == true)
+    {
+        post_con.style.color=coloring[1].value;
+    }
+    document.getElementById("posts").appendChild(post_t);
+    document.getElementById("posts").appendChild(post_con);
+    }
 }
 
 function hideMain()
