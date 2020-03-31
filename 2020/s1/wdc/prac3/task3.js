@@ -60,12 +60,15 @@ function showOnly()
     var con = document.getElementsByClassName("post-content");
     var tin = document.getElementsByClassName("post-time");
     var hide = document.getElementsByName("visible")[0].value;
-    alert(hide);
-    alert(con.length);
-    for(let i = con.length-1; i>=hide; i--)
+    for(let i = con.length-1; i>=0; i--)
     {
         con[i].style.display = "none";
         tin[i].style.display = "none";
+    }
+    for(let i = 0; i < hide; i++)
+    {
+        tin[i].style.display = "block";
+        con[i].style.display = "block";
     }
 }
 
