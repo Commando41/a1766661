@@ -59,6 +59,8 @@ function postStuff()
     posting.appendChild(post_t);
     posting.appendChild(post_con);
     }
+    showOnly();
+   // if(document.getElementsByName("visible").max)
 }
 
 function showOnly()
