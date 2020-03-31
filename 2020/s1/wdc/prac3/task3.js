@@ -1,6 +1,7 @@
 var p = 0;
 var posting = document.getElementById("posts");
-var noder = -1;
+var noder = 0;
+var hide = document.getElementsByName("visible")[0].value;
 function addOne()
 {
     p += 1;
@@ -20,7 +21,7 @@ function postStuff()
 //    butto = document.createElement("BUTTON");
 //    butto.onclick = "removing()";
 //    butto.innerText = "X";
-//    butto.value = noder + 3;
+    noder = noder + 1;
     post_t.innerHTML = new Date();
 
     post_con.innerHTML = document.getElementsByClassName("postText")[0].value;
@@ -50,6 +51,11 @@ function postStuff()
 
   //  myDivo = document.createElement("DIV");
 //    myDivo.append(post_t, butto);
+    if(noder >= hide)
+    {
+        post_t.style.display = "none";
+        post_con.style.display = "none";
+    }
     posting.appendChild(post_t);
     posting.appendChild(post_con);
     }
@@ -59,7 +65,7 @@ function showOnly()
 {
     var con = document.getElementsByClassName("post-content");
     var tin = document.getElementsByClassName("post-time");
-    var hide = document.getElementsByName("visible")[0].value;
+    hide = document.getElementsByName("visible")[0].value;
     for(let i = con.length-1; i>=0; i--)
     {
         con[i].style.display = "none";
