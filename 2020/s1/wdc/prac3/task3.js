@@ -1,5 +1,6 @@
 var p = 0;
-
+var posting = document.getElementById("posts");
+var noder = -1;
 function addOne()
 {
     p += 1;
@@ -16,10 +17,17 @@ function postStuff()
     post_con.className = "post-content";
     var post_t = document.createElement("pre");
     post_t.className = "post-time";
+//    butto = document.createElement("BUTTON");
+//    butto.onclick = "removing()";
+//    butto.innerText = "X";
+//    butto.value = noder + 3;
     post_t.innerHTML = new Date();
+
     post_con.innerHTML = document.getElementsByClassName("postText")[0].value;
     var coloring = document.getElementsByName("color");
+    var styled = document.getElementsByName("style");
 
+    //Checks for the colour chosen
     if(coloring[0].checked == true)
     {
         post_con.style.color=coloring[0].value;
@@ -27,11 +35,41 @@ function postStuff()
     {
         post_con.style.color=coloring[1].value;
     }
-    document.getElementById("posts").appendChild(post_t);
-    document.getElementById("posts").appendChild(post_con);
+
+    //Check if bold button is selected
+    if(styled[0].checked == true)
+    {
+        post_con.style.fontWeight = "bold";
+    }
+
+    //Checks if italics button is chosen
+    if(styled[1].checked == true)
+    {
+        post_con.style.fontStyle = "italic";
+    }
+
+  //  myDivo = document.createElement("DIV");
+//    myDivo.append(post_t, butto);
+    posting.appendChild(post_t);
+    posting.appendChild(post_con);
     }
 }
 
+function showOnly()
+{
+    var con = document.getElementsByClassName("post-content");
+    var tin = document.getElementsByClassName("post-time");
+    var hide = document.getElementsByName("visible")[0].value;
+    alert(hide);
+    alert(con.length);
+    for(let i = con.length-1; i>=hide; i--)
+    {
+        con[i].style.display = "none";
+        tin[i].style.display = "none";
+    }
+}
+
+//This function hides the main div
 function hideMain()
 {
     document.getElementById("main").style.display = "none";
@@ -39,13 +77,20 @@ function hideMain()
 
 }
 
+//This function hides the menu div
 function hideMenu()
 {
     document.getElementById("menu").style.display = "none";
     document.getElementById("main").style.display = "block";
 }
 
+//This function changes the background
 function changeBackColor()
 {
     document.body.style.background = document.getElementById("back").value;
 }
+
+//function removing()
+//{
+//    posting.removeChild(posting.childNode[]);
+//}
