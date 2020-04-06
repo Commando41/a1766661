@@ -23,22 +23,27 @@ int myF::solve(int n)
 
 int myF::solve_mem(int n)
 {
-	if(n % 2)
+	if(n <40)
 	{
-		return solve(n/2) + solve(n-2) + solve(n-3);
+		if(n % 2)
+		{
+			return solve(n/2) + solve(n-2) + solve(n-3);
+		}
+		else
+		{
+			return solve((n-1)/2) + solve(n-4) + solve(n-3);
+		}
 	}
 	else
 	{
-		return solve((n-1)/2) + solve(n-4) + solve(n-3);
-	}
-
-	if(n % 2)
-	{
-		return solve_mem(n/2) + solve_mem(n-2) + solve_mem(n-3);
-	}
-	else
-	{
-		return solve_mem((n-1)/2) + solve_mem(n-4) + solve_mem(n-3);
+		if(n % 2)
+		{
+			return solve_mem(n/2) + solve_mem(n-2) + solve_mem(n-3);
+		}
+		else
+		{
+			return solve_mem((n-1)/2) + solve_mem(n-4) + solve_mem(n-3);
+		}
 	}
 }
 
