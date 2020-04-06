@@ -9,6 +9,8 @@ class myF
 		int solve_mem(int n);
 		int solve(int n);
 		~myF();
+	protected:
+		static vector<int> record;
 
 };
 #endif
