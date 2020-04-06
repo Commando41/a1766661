@@ -17,7 +17,7 @@ int main(int argc, char** args)
 		str_strm >> temp_str;
 		if(stringstream(temp_str) >> temp_int)
 		{
-			if(temp_int < 40)
+			if(temp_int <= 40)
 			{
 				cout << trying.solve(temp_int) << " ";
 			}
