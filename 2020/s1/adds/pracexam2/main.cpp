@@ -28,4 +28,5 @@ int main(int argc, char** args)
 		}
 	temp_str = "";
 	}
+	cout << endl;
 }

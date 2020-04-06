@@ -15,9 +15,9 @@ int myF::solve(int n)
 	}
 	if (n % 2)
 	{
-		return (*this)(n/2) + (*this)(n-2) + (*this)(n-3);
+		return solve(n/2) + solve(n-2) + solve(n-3);
 	}else{
-		return (*this)((n-1)/2) + (*this)(n-4) + (*this)(n-3);
+		return solve((n-1)/2) + solve(n-4) + solve(n-3);
 	}
 }
 
@@ -34,11 +34,11 @@ int myF::solve_mem(int n)
 
 	if(n % 2)
 	{
-		return (*this)(n/2) + (*this)(n-2) + (*this)(n-3);
+		return solve_mem(n/2) + solve_mem(n-2) + solve_mem(n-3);
 	}
 	else
 	{
-		return (*this)((n-1)/2) + (*this)(n-4) + (*this)(n-3);
+		return solve_mem((n-1)/2) + solve_mem(n-4) + solve_mem(n-3);
 	}
 }
 
