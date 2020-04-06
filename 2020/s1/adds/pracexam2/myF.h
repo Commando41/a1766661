@@ -1,5 +1,6 @@
 #ifndef MYF_H
 #define MYF_H
+#include <array>
 using namespace std;
 
 class myF
@@ -10,6 +11,6 @@ class myF
 		int solve(int n);
 		~myF();
 	private:
-		int *record = new int[100];
+		array<int, 150> record;
 };
 #endif

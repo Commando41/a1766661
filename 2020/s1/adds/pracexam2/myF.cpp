@@ -1,10 +1,11 @@
 #include <iostream>
 #include "myF.h"
+#include <array>
 using namespace std;
 
 myF::myF()
 {
-
+	record.fill(-1);
 }
 
 int myF::solve(int n)
@@ -29,19 +30,15 @@ int myF::solve_mem(int n)
 	{
 		return 1;
 	}
-	if(record[n] != NULL)
-	{
-
-	}
-	else
+	if(record[n] == -1)
 	{
 		if ((n % 2) == 0)
 		{
 			record[n] = (solve_mem(n/2) + solve_mem(n-2) + solve_mem(n-3));
 		}
 		else
-			{
-		record[n] = (solve_mem((n-1)/2) + solve_mem(n-4) + solve_mem(n-3));
+		{
+			record[n] = (solve_mem((n-1)/2) + solve_mem(n-4) + solve_mem(n-3));
 		}
 	}
 	return record[n];
