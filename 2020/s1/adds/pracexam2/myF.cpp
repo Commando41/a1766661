@@ -29,14 +29,18 @@ int myF::solve_mem(int n)
 	{
 		return 1;
 	}
+	int record[n+1];
+
+
 	if ((n % 2) == 0)
 	{
-		return (solve_mem(n/2) + solve_mem(n-2) + solve_mem(n-3));
+		record[n] = (solve_mem(n/2) + solve_mem(n-2) + solve_mem(n-3));
 	}
 	else
 	{
-		return (solve_mem((n-1)/2) + solve_mem(n-4) + solve_mem(n-3));
+		record[n] = (solve_mem((n-1)/2) + solve_mem(n-4) + solve_mem(n-3));
 	}
+	return record[n];
 }
 
 myF::~myF()
