@@ -25,20 +25,24 @@ int myF::solve(int n)
 
 int myF::solve_mem(int n)
 {
-	if(n >= 0 && n <= 10)
+	if((n <= 10) && (n >= 0))
 	{
 		return 1;
 	}
-	int record[n+1];
-
-
-	if ((n % 2) == 0)
+	if(record[n] != NULL)
 	{
-		record[n] = (solve_mem(n/2) + solve_mem(n-2) + solve_mem(n-3));
+
 	}
 	else
 	{
+		if ((n % 2) == 0)
+		{
+			record[n] = (solve_mem(n/2) + solve_mem(n-2) + solve_mem(n-3));
+		}
+		else
+			{
 		record[n] = (solve_mem((n-1)/2) + solve_mem(n-4) + solve_mem(n-3));
+		}
 	}
 	return record[n];
 }

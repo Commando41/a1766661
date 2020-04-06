@@ -10,6 +10,6 @@ class myF
 		int solve(int n);
 		~myF();
 	private:
-		int record[150];
+		int *record = new int[100];
 };
 #endif
