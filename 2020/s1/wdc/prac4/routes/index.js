@@ -43,18 +43,11 @@ router.get('/color.html', function(req, res, next) {
 ');
 });
 
-//var counted=0;
 var mess="";
-//var recording;
 var index;
 router.get('/log.html', function(req, res, next){
     var recording= new Date();
-    //counted++;
-  //  for(index = 0; index < counted; index++)
-//    {
-        mess = mess + '<li>' + recording + '</li>';
-//    }
-
+    mess = mess + '<li>' + recording + '</li>';
     res.send('<!DOCTYPE html> \
     <html lang="en-US">\
         <head>\
