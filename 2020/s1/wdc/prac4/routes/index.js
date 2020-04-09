@@ -30,8 +30,7 @@ router.get('/color.html', function(req, res, next) {
     }else{
         Cindex++;
     }
-  res.send('\
-<!DOCTYPE html>\
+  res.send('<!DOCTYPE html>\
 <html lang="en-US">\
 <head>\
   <meta charset="UTF-8">\
@@ -60,7 +59,7 @@ router.get('/log.html', function(req, res, next){
     <html lang="en-US">\
         <head>\
             <title>LOL</title>\
-            <meta charset="UTF-8"\
+            <meta charset="UTF-8">\
         </head>\
         <body>\
         <ul>'+mess+'</ul> \
