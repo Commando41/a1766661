@@ -11,6 +11,8 @@ router.get('/last.txt', function(req, res, next) {
   res.send(timestamp+"");
   timestamp = new Date();
 });
+
+
 var Cindex = 1;
 var text_color = "";
 router.get('/color.html', function(req, res, next) {
@@ -40,6 +42,30 @@ router.get('/color.html', function(req, res, next) {
 </body>\
 </html>\
 ');
+});
+
+//var counted=0;
+var mess="";
+//var recording;
+var index;
+router.get('/log.html', function(req, res, next){
+    var recording= new Date();
+    //counted++;
+  //  for(index = 0; index < counted; index++)
+//    {
+        mess = mess + '<li>' + recording + '</li>';
+//    }
+
+    res.send('<!DOCTYPE html> \
+    <html lang="en-US">\
+        <head>\
+            <title>LOL</title>\
+            <meta charset="UTF-8"\
+        </head>\
+        <body>\
+        <ul>'+mess+'</ul> \
+        </body>\
+    </html>');
 });
 
 module.exports = router;
