@@ -3,22 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <title>Express</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/yourfile.js"></script>
   </head>
   <body>
     <h1>My Prac 4 Express Server</h1>
     <p onload="goUP()"></p>
-    <script>
-    function goUP(){
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 400 && this.responseText !="")
-        {
-          document.getElementByTagName('p').innerHTML = "This page was last viewed " + this.responseText;
-        }
-      xhttp.open("GET", "/last.txt", true);
-      xhttp.send();
-      };
-    }
-    </script>
+    <script>goUP();</script>
   </body>
 </html>
