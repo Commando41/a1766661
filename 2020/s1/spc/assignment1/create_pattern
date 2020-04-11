@@ -1,6 +1,27 @@
 #!/bin/bash
 
-#Acquire the shifting parameter
-n = $1
+#acquire the parameters
+for v
+do
+    if [[ "$v" == "-u" ]]
+        then
+            ono=1
+    elif [[ "$v" == "-n" ]]
+        then
+            duo=$v
+    elif [[ "$v" -ge 0 ]]
+        then
+            a=$v
+fi
+done
 
+#create a string message
+string="THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
 
+#check if convert to capital when shifting
+if [[ $ono -eq 1 ]]
+    then
+        echo $string | tr $(printf %${a}s | tr ' ' '.')\A-Z a-za-z
+else
+        echo $string | tr $(printf %${a}s | tr ' ' '.')\A-Z A-ZA-Z
+fi
