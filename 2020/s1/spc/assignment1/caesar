@@ -1,0 +1,18 @@
+#!/bin/bash
+
+for v
+  do
+	if [[ "$v" == "-u" ]] then
+		upper=$v
+	elif [[ "$v" -ge 0 ]] then
+		shift=$v
+  done
+
+if [[ $upper == "-u" ]];
+then
+	transition=./create_pattern -n $shift $upper
+else
+	transition=./create_pattern -m $shift
+fi
+
+echo $transition
