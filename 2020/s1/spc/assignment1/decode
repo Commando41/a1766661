@@ -1,11 +1,20 @@
 #!/bin/bash
 
-#uppercase=(A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+#Using a while loop with ariable c to keep track of index
 c=1
+#This process repeats itself for 25 times
 while [ $c -le 25 ]
 do
+	#create the pattern needed by calling create_pattern
 	transition=$(./create_pattern -n $c -u)
+
+	#output the current shift
 	echo "Shift $c"
+
+	#display the shifted word through concatenating the text in the textfile and shifting it
 	cat $1 | tr '[A-Z]' $transition
+
+#goes to the next index
 c=$(( $c + 1 ))
+
 done
