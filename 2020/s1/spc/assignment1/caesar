@@ -14,11 +14,11 @@ for v
 if [[ $upper == "-u" ]];
 then
 	transition=$(./create_pattern $no $shift $upper)
-	tr '[Aa-Zz]' $transition
+	tr '[A-Z]' $transition
 	#tr '[a-z]' $transition
 else
 	transition=$(./create_pattern $no $shift)
-	tr '[Aa-Zz]' $transition
+	tr '[a-z]' $transition
 	#tr '[A-Z]' $transition
 fi
 
