@@ -2,17 +2,23 @@
 
 for v
   do
-	if [[ "$v" == "-u" ]] then
+	if [[ "$v" == "-u" ]]; then
 		upper=$v
-	elif [[ "$v" -ge 0 ]] then
+	elif [[ "$v" -ge 0 ]]; then
 		shift=$v
+	elif [[ "$v" == "-n" ]]; then
+		no=$v
+	fi
   done
 
 if [[ $upper == "-u" ]];
 then
-	transition=./create_pattern -n $shift $upper
+	transition=$(./create_pattern $no $shift $upper)
+	tr '[Aa-Zz]' $transition
+	#tr '[a-z]' $transition
 else
-	transition=./create_pattern -m $shift
+	transition=$(./create_pattern $no $shift)
+	tr '[Aa-Zz]' $transition
+	#tr '[A-Z]' $transition
 fi
 
-echo $transition
