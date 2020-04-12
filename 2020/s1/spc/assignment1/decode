@@ -5,7 +5,7 @@ c=1
 while [ $c -le 25 ]
 do
 	transition=$(./create_pattern -n $c -u)
-	#echo "Shift $c"
+	echo "Shift $c"
 	cat $1 | tr '[A-Z]' $transition
 c=$(( $c + 1 ))
 done
