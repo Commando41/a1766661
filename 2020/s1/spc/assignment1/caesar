@@ -1,24 +1,35 @@
 #!/bin/bash
 
+#acquire all the parameters
 for v
-  do
+  do	#checks if -u is present as a parameter
 	if [[ "$v" == "-u" ]]; then
+		#store the parameter in a variable
 		upper=$v
+
+	#checks for a number parameter
 	elif [[ "$v" -ge 0 ]]; then
+		#Stores the number in the variable shift
 		shift=$v
+
+	#checks for -n in the parameter
 	elif [[ "$v" == "-n" ]]; then
 		no=$v
 	fi
   done
 
+#Checks if transitions in uppercase Text
 if [[ $upper == "-u" ]];
 then
+	#Acquire the pattern output from create_pattern
 	transition=$(./create_pattern $no $shift $upper)
+	#Shift the text from another file in UPPERCASE texts
 	tr '[A-Z]' $transition
-	#tr '[a-z]' $transition
+
 else
 	transition=$(./create_pattern $no $shift)
+	#Shift the text from another file in lowercase texts
 	tr '[a-z]' $transition
-	#tr '[A-Z]' $transition
+
 fi
 

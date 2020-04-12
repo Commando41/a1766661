@@ -1,3 +1,9 @@
 #!/bin/bash
 
+uppercase=(A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
 
+for i in {1..25}
+do
+	TRANSITION=[${uppercase[$i]}-ZA-${uppercase[$((i-1))]}]
+	tr '[A-Z]' '$TRANSITION'
+done
