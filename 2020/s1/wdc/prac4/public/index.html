@@ -4,29 +4,7 @@
     <meta charset="UTF-8">
     <title>Express</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
-    <script type="text/javascript">
-      function goUP(){
-
-  //Create a request
-  var xhttp = new XMLHttpRequest();
-  alert("goUP");
-  //Define a function
-  xhttp.onreadystatechange = function(){
-    alert("goUP");
-    if(this.readyState == 4 && this.status == 200 && this.responseText != '')
-    {
-      alert("goUP");
-      document.getElementsByTagName('p')[0].innerHTML = 'This page was last viewed ' + this.responseText;
-      alert("goUP");
-    }
-  };
-  //Open a xhttp request
-  xhttp.open("GET", "/last.txt", true);
-  //Send a request
-  xhttp.send();
-
-}
-    </script>
+    <script src="/javascripts/yourfile.js"></script>
   </head>
   <body onload="goUP()">
     <h1>My Prac 4 Express Server</h1>
