@@ -27,7 +27,8 @@ function YES(){
   xhttp.onreadystatechange = function(){
     if(this.readyState == 4 && this.status == 200)
     {
-    document.getElementById('Lolo').style.display = "none";
+    document.getElementByTagName('p').style.display = "none";
+    document.getElementByTagName('button').style.display = "none";
     pageContent();
     }
   };
