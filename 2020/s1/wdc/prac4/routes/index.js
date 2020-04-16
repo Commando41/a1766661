@@ -68,4 +68,21 @@ router.get('/color.txt', function(req, res, next) {
     res.send(selected);
 });
 
+var acc = false;
+router.get('/accept', function(req, res, next) {
+    res.sendStatus(200);
+    acc = true;
+});
+
+router.get('/content.ajax', function(req, res, next) {
+    if (acc == true){
+        res.send('<p>para 1</p>\
+                  <p>para 2');
+    }
+    else if(acc == false)
+    {
+        res.sendStatus(403);
+    }
+});
+
 module.exports = router;
