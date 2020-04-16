@@ -100,7 +100,8 @@ var images = [
 
 var task4_7req = 0;
 router.get('/images.json', function(req, res, next) {
-    res.send(images[task4_7req]);
+    var d = JSON.stringify(images[task4_7req]);
+    res.send(d);
     task4_7req++;
     if (task4_7req == 10){
         task4_7req = 0;
