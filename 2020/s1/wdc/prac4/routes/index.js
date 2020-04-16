@@ -6,30 +6,26 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-var timestamp = "";
+var timestamp = "true";
 router.get('/last.txt', function(req, res, next) {
-  res.send(timestamp+"");
-  timestamp = new Date();
+    if(timestamp == "true"){
+        timestamp = new Date();
+        res.end();
+    } else {
+         res.send(timestamp+"");
+         timestamp = new Date();
+    }
 });
 
-
-var Cindex = 1;
-var text_color = "";
+var Cindex = 0;
+var text_color = ["red", "yellow", "green", "blue"];
+var chose = "";
 router.get('/color.html', function(req, res, next) {
-    if(Cindex == 1){
-        text_color = "red";
-    }else if (Cindex == 2){
-        text_color = "yellow";
-    }else if(Cindex == 3){
-        text_color = "green";
-    }else if(Cindex == 4){
-        text_color = "blue";
+    if(Cindex >= 4){
+        Cindex=0;
     }
-    if(Cindex == 4){
-        Cindex = 1;
-    }else{
-        Cindex++;
-    }
+    chose = text_color[Cindex];
+    Cindex++;
   res.send('<!DOCTYPE html>\
 <html lang="en-US">\
 <head>\
@@ -37,7 +33,7 @@ router.get('/color.html', function(req, res, next) {
  <title>Express</title>\
 </head>\
 <body>\
-  <h1 style="color:' + text_color + '">' + text_color + '</h1>\
+  <h1 style="color:' + chose + '">' + chose + '</h1>\
 </body>\
 </html>\
 ');
@@ -58,6 +54,18 @@ router.get('/log.html', function(req, res, next){
         <ul>'+mess+'</ul> \
         </body>\
     </html>');
+});
+
+var Cind = 0;
+var textColor = ["red", "yellow", "green", "blue"];
+var selected = "";
+router.get('/color.txt', function(req, res, next) {
+    if(Cind >= 4){
+        Cind=0;
+    }
+    selected = textColor[Cind];
+    Cind++;
+    res.send(selected);
 });
 
 module.exports = router;
