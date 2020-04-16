@@ -27,8 +27,8 @@ function YES(){
   xhttp.onreadystatechange = function(){
     if(this.readyState == 4 && this.status == 200)
     {
-    document.getElementByTagName('p').style.display = "none";
-    document.getElementByTagName('button').style.display = "none";
+    document.getElementById('TC').style.display = "none";
+    document.getElementById('butto').style.display = "none";
     pageContent();
     }
   };
