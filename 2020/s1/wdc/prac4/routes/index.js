@@ -77,7 +77,7 @@ router.get('/accept', function(req, res, next) {
 router.get('/content.ajax', function(req, res, next) {
     if (acc == true){
         res.send('<p>para 1</p>\
-                  <p>para 2');
+                  <p>para 2</p>');
     }
     else if(acc == false)
     {
@@ -101,11 +101,13 @@ var images = [
 var task4_7req = -1;
 router.get('/images.json', function(req, res, next) {
     task4_7req++;
-    if (task4_7req == 10){
+    if (task4_7req > 9){
         task4_7req = 0;
     }
     var d = JSON.stringify(images[task4_7req]);
     res.send(d);
 });
+
+
 
 module.exports = router;
