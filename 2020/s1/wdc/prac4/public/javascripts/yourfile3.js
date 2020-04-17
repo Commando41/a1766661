@@ -6,10 +6,10 @@ function pageContent(){
     if(this.readyState == 4)
     {
         if(this.status == 200){
-            document.querySelector('body').innerHTML = this.responseText;
+            document.querySelector('body').innerHTML = "<h1>header</h1>" + this.responseText;
         }
         else if(this.status == 403){
-            document.querySelector('div').innerHTML = '<p>Please accept Ts & Cs!</p><button onclick="YES()" type="button" name="button">Accept!</button>';
+            document.querySelector('div').innerHTML = '<h1>header</h1><p>Please accept Ts & Cs!</p><button onclick="YES()" type="button" name="button">Accept!</button>';
         }
 
     }
