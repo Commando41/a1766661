@@ -15,7 +15,7 @@ function pageContent(){
     }
   };
   //Open a xhttp request
-  xhttp.open("GET", "/content.ajax", true);
+  xhttp.open("GET", "/content.ajax", false);
   //Send a request
   xhttp.send();
 }
@@ -32,7 +32,7 @@ function YES(){
     }
   };
 
-  xhttp.open("GET", "/accept", true);
+  xhttp.open("GET", "/accept", false);
 
   xhttp.send();
 }
