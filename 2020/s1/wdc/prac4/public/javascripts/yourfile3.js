@@ -6,10 +6,18 @@ function pageContent(){
     if(this.readyState == 4)
     {
         if(this.status == 200){
-            document.getElementById('Lolo').innerHTML = this.responseText;
+            document.Body.innerHTML = this.responseText;
         }
         else if(this.status == 403){
-            document.getElementById('Lolo').style.display = "block";
+            var p = document.createElement('p');
+            var but = document.createElement('button');
+            p.innerText = "PLease accept the T & C's!";
+            but.innerText = "Accept!";
+            but.onclick = "YES()";
+            but.type = "button";
+            but.name = "YES";
+            document.getElementById('Lolo').appendChild(p);
+            document.getElementById('Lolo').appendChild(but);
         }
 
     }
@@ -27,8 +35,7 @@ function YES(){
   xhttp.onreadystatechange = function(){
     if(this.readyState == 4 && this.status == 200)
     {
-    document.getElementById('TC').style.display = "none";
-    document.getElementById('butto').style.display = "none";
+    document.getElementById('Lolo').style.display = "none";
     pageContent();
     }
   };
