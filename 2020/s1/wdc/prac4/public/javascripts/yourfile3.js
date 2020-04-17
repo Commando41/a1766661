@@ -6,18 +6,10 @@ function pageContent(){
     if(this.readyState == 4)
     {
         if(this.status == 200){
-            document.Body.innerHTML = this.responseText;
+            document.querySelector('body').innerHTML = this.responseText;
         }
         else if(this.status == 403){
-            var p = document.createElement('p');
-            var but = document.createElement('button');
-            p.innerText = "PLease accept the T & C's!";
-            but.innerText = "Accept!";
-            but.onclick = "YES()";
-            but.type = "button";
-            but.name = "YES";
-            document.getElementById('Lolo').appendChild(p);
-            document.getElementById('Lolo').appendChild(but);
+            document.querySelector('div').innerHTML = '<p>Please accept Ts & Cs!</p><button onclick="YES()" type="button" name="button">Accept!</button>';
         }
 
     }
