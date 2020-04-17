@@ -98,14 +98,14 @@ var images = [
     { uri:'photo-1565194481104-39d1ee1b8bcc.jpg', description:'short-coated gray dog' }
 ];
 
-var task4_7req = 0;
+var task4_7req = -1;
 router.get('/images.json', function(req, res, next) {
-    var d = JSON.stringify(images[task4_7req]);
-    res.send(d);
     task4_7req++;
     if (task4_7req == 10){
         task4_7req = 0;
     }
+    var d = JSON.stringify(images[task4_7req]);
+    res.send(d);
 });
 
 module.exports = router;
