@@ -1,1 +1,1 @@
-SELECT given_name, family_name FROM Students INNER JOIN Subjects WHERE subject = 'Web and Database Computing';
+SELECT given_name, family_name FROM Students INNER JOIN Enrolments ON Students.student_id = Enrolment.student_id WHERE subject_code = 'COMP SCI 2207';
