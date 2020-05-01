@@ -1,1 +1,1 @@
-SELECT student_id, programs FROM Students;
+SELECT student_id, program FROM Students;
