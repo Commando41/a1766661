@@ -1,0 +1,1 @@
+SELECT given_name, family_name FROM Students INNER JOIN Subjects WHERE subject = 'Web and Database Computing';
