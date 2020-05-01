@@ -57,8 +57,7 @@ CREATE TABLE `Students` (
   `student_id` varchar(7) NOT NULL,
   `given_name` varchar(20) DEFAULT NULL,
   `family_name` varchar(20) DEFAULT NULL,
-  `program` varchar(13) DEFAULT NULL,
-  PRIMARY KEY (`student_id`)
+  `program` varchar(13) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -81,8 +80,7 @@ DROP TABLE IF EXISTS `Subjects`;
 CREATE TABLE `Subjects` (
   `subject_code` varchar(13) NOT NULL,
   `subject` varchar(40) DEFAULT NULL,
-  `faculty` varchar(6) DEFAULT NULL,
-  PRIMARY KEY (`subject_code`)
+  `faculty` varchar(6) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
