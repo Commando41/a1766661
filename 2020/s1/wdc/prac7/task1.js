@@ -44,7 +44,8 @@ var vueinst = new Vue({
     el: '#vuemain',
     data: {
         text: 'Pretty good.',
-        image: ads[0]
+        image: ads[0],
+        showad: true
     }
 });
 

@@ -87,7 +87,7 @@
             </nav>
         </header>
 
-        <div id="ad">
+        <div id="ad" v-if="showad">
             <button class="pure-button" style="float:right;" onclick="vueinst.showad = false;">close</button>
             <img v-bind:src="image.url" v-bind:alt="image.name" onclick="vueinst.image=ads[Math.floor((Math.random() * 3))];" />
             <h2>{{ image.name }}</h2>
@@ -95,7 +95,7 @@
 
 
 
-        <div id="main" class="container">
+        <div id="main" class="container" v-else>
 
             <div style="float:right; margin: 1em; border-left: 1px solid #111111;">
 
