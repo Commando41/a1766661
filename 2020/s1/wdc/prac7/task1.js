@@ -1,7 +1,3 @@
-var text = new Vue({
-
-});
-
 /*
 
 Top menu (task 1.5):
@@ -45,8 +41,12 @@ var ads = [
 ];
 
 var vueinst = new Vue({
-    el: '#first',
+    el: '#vuemain',
     data: {
-        text: 'Pretty good.'
+        text: 'Pretty good.',
+        image: ads[0].url,
+        message: ads[0].name
     }
 });
+
+//var ime = new Vue();

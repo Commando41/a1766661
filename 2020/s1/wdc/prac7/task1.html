@@ -89,8 +89,8 @@
 
         <div id="ad">
             <button class="pure-button" style="float:right;" onclick="vueinst.showad = false;">close</button>
-            <img src="" alt="" onclick="vueinst.image=ads[Math.floor((Math.random() * 3))];" />
-            <h2></h2>
+            <img v-bind:src="image" v-bind:alt="message" onclick="vueinst.image=ads[Math.floor((Math.random() * 3))];" />
+            <h2>{{ message }}</h2>
         </div>
 
 
