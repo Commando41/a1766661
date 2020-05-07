@@ -47,7 +47,7 @@ var vueinst = new Vue({
         image: ads[0],
         showad: true,
         nightmode: false,
-        bColor: 'black',
-        tColor: 'white'
+        bColor: '#111111',
+        tColor: '#eeeeee'
     }
 });
