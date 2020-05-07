@@ -49,8 +49,9 @@ var vueinst = new Vue({
         nightmode: false,
         bColor: '#111111',
         tColor: '#eeeeee',
-        topmenu: [{ message:{title:'Home',         url:'/' }},
-                  { message:{title:'About',        url:'/about' }},
-                  { message:{title:'Contact Us',   url:'/contact' }},]
+        topmenu: [{ message:{title:'Home', url:'/' }},
+                  { message:{title:'About', url:'/about' }},
+                  { message:{title:'Contact Us', url:'/contact' }},],
+        ctext: 'type your comment here',
     }
 });
