@@ -45,8 +45,9 @@ var vueinst = new Vue({
     data: {
         text: 'Pretty good.',
         image: ads[0],
-        showad: true
+        showad: true,
+        nightmode: false,
+        bColor: 'black',
+        tColor: 'white'
     }
 });
-
-//var ime = new Vue();

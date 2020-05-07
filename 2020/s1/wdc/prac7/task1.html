@@ -71,7 +71,7 @@
 
     <body>
 
-        <div id="vuemain">
+        <div id="vuemain" v-bind:style="[nightmode ? { 'background-color':bColor,color:tColor }:null]">
 
         <header>
             <h1>Welcome to the WDC Store!</h1>
@@ -107,8 +107,8 @@
 
                 <span>Nightmode:</span>
                 <div class="pure-button-group" role="group" aria-label="Nightmode">
-                    <button class="pure-button pure-button-active" onclick="vueinst.nightmode = false;">OFF</button>
-                    <button class="pure-button" onclick="vueinst.nightmode = true;">ON</button>
+                    <button class="pure-button" onclick="vueinst.nightmode = false;" v-bind:class="[nightmode ? null : 'pure-button-active']">OFF</button>
+                    <button class="pure-button" onclick="vueinst.nightmode = true;" v-bind:class="[nightmode ? ['pre-button-active' , 'pure-button-primary']: null]">ON</button>
                 </div>
 
                 <hr />
