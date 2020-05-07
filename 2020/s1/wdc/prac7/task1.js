@@ -48,6 +48,9 @@ var vueinst = new Vue({
         showad: true,
         nightmode: false,
         bColor: '#111111',
-        tColor: '#eeeeee'
+        tColor: '#eeeeee',
+        topmenu: [{ message:{title:'Home',         url:'/' }},
+                  { message:{title:'About',        url:'/about' }},
+                  { message:{title:'Contact Us',   url:'/contact' }},]
     }
 });

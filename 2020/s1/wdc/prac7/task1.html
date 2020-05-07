@@ -71,7 +71,7 @@
 
     <body>
 
-        <div id="vuemain" v-bind:style="[nightmode ? { 'background-color':bColor,color:tColor }:null]">
+        <div id="vuemain" v-bind:style="[nightmode ? { 'background-color':bColor,color:tColor }:'']">
 
         <header>
             <h1>Welcome to the WDC Store!</h1>
@@ -81,7 +81,7 @@
                 </ul>
                 <div class="pure-menu">
                     <ul id="submenu" class="pure-menu-list">
-
+                        <li v-for="item in topmenu" class="pure-menu-item"><a v-bind:href="item.message.url" class="pure-menu-link">{{ item.message.title }}</a></li>
                     </ul>
                 </div>
             </nav>
@@ -107,8 +107,8 @@
 
                 <span>Nightmode:</span>
                 <div class="pure-button-group" role="group" aria-label="Nightmode">
-                    <button class="pure-button" onclick="vueinst.nightmode = false;" v-bind:class="[nightmode ? null : 'pure-button-active']">OFF</button>
-                    <button class="pure-button" onclick="vueinst.nightmode = true;" v-bind:class="[nightmode ? ['pure-button-active' , 'pure-button-primary']: null]">ON</button>
+                    <button class="pure-button" onclick="vueinst.nightmode = false;" v-bind:class="[nightmode ? '' : 'pure-button-active']">OFF</button>
+                    <button class="pure-button" onclick="vueinst.nightmode = true;" v-bind:class="[nightmode ? ['pure-button-active' , 'pure-button-primary']: '']">ON</button>
                 </div>
 
                 <hr />
