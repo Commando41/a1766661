@@ -96,15 +96,11 @@
 
 
         <div id="main" class="container" v-else>
-
             <div style="float:right; margin: 1em; border-left: 1px solid #111111;">
-
                 <h1>Vue is:</h1>
                 <p id="first">{{ text }}</p>
                 <button class="pure-button" onclick="vueinst.text='Awesome!';">Try again</button>
-
                 <hr />
-
                 <span>Nightmode:</span>
                 <div class="pure-button-group" role="group" aria-label="Nightmode">
                     <button class="pure-button" onclick="vueinst.nightmode = false;" v-bind:class="[nightmode ? '' : 'pure-button-active']">OFF</button>
@@ -131,4 +127,3 @@
         </div>
     </body>
 </html>
-
