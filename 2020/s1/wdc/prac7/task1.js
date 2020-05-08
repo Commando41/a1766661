@@ -49,10 +49,25 @@ var vueinst = new Vue({
         nightmode: false,
         bColor: '#111111',
         tColor: '#eeeeee',
-        topmenu: [{ message:{title:'Home', url:'/' }},
-                  { message:{title:'About', url:'/about' }},
-                  { message:{title:'Contact Us', url:'/contact' }},],
+        topmenu: [{ message:{title:'Home', url:'/', submenus: [] }},
+                  { message:{ title:'About', url:'/about',
+                        submenus: [
+                            { title:'Who we are',   url:'/about#us' },
+                            { title:'What we do',   url:'/about#store' },
+                            { title:'Our range',     url:'/about#range' }
+                        ]
+
+                  }},
+                  { message:{ title:'Contact Us',   url:'/contact',
+                        submenus: [
+                            { title:'Information',   url:'/contact#info' },
+                            { title:'Returns',   url:'/contact#return' },
+                            { title:'Locate Us',     url:'/contact#locate' }
+                        ]
+                  }}],
         ctext: 'type your comment here',
         carr: [],
+        topmenuitem: 0,
+        topmenuhover: false,
     }
 });

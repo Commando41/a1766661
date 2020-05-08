@@ -75,13 +75,13 @@
 
         <header>
             <h1>Welcome to the WDC Store!</h1>
-            <nav class="pure-menu pure-menu-horizontal">
+            <nav class="pure-menu pure-menu-horizontal" v-on:mouseenter="topmenuhover = true" v-on:mouseleave="topmenuhover = false">
                 <ul id="topmenu" class="pure-menu-list">
-                    <li v-for="item in topmenu" class="pure-menu-item"><a v-bind:href="item.message.url" class="pure-menu-link">{{ item.message.title }}</a></li>
+                    <li v-for="(item, iterary) in topmenu" class="pure-menu-item" v-on:mouseenter="topmenuitem = iterary"><a v-bind:href="item.message.url" class="pure-menu-link">{{ item.message.title }}</a></li>
                 </ul>
                 <div class="pure-menu">
-                    <ul id="submenu" class="pure-menu-list">
-
+                    <ul id="submenu" class="pure-menu-list" v-if="topmenuhover">
+                        <li v-for="subItems in topmenu[topmenuitem].message.submenus" class="pure-menu-item"><a v-bind:href="subItems.url" class="pure-menu-link">{{ subItems.title }}</a></li>
                     </ul>
                 </div>
             </nav>
