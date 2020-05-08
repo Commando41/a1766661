@@ -53,5 +53,6 @@ var vueinst = new Vue({
                   { message:{title:'About', url:'/about' }},
                   { message:{title:'Contact Us', url:'/contact' }},],
         ctext: 'type your comment here',
+        carr: [],
     }
 });

@@ -120,7 +120,8 @@
             </div>
 
             <div id="comments">
-                <textarea rows="4" cols="60">Comments</textarea><button class="pure-button">Add comment</button>
+                <textarea rows="4" cols="60" v-model="ctext" placeholder="Write stuff">Comments</textarea><button class="pure-button" v-on:click="carr.push(ctext)">Add comment</button>
+                <p v-for="lols in carr">{{ lols }}</p>
             </div>
         </div>
         <footer><p>WDC Store</p></footer>
