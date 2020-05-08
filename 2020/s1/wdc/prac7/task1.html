@@ -109,11 +109,13 @@
 
                 <hr />
 
-                <div id="stores" class="store" v-for="things in sarr">
-                    <img v-bind:src="things.img" alt="A picture of the storefront" />
+                <div id="stores" v-for="things in sarr">
+                    <div class="store">
+                        <img v-bind:src="things.img" alt="A picture of the storefront" />
                         <h3>{{ things.name }}</h3>
                         <p>{{ things.address }}</p>
                         <span>{{ things.counter }} people have been here</span><button v-on:click="things.counter += 1">I've been here</button>
+                    </div>
                 </div>
 
             </div>
