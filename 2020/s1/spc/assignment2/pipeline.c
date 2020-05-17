@@ -27,8 +27,10 @@ int main()
 			if(pipe(newPipe) == -1)
 			{
 				printf("Failed making pipe \n");
+				return 1;
 			}
 		}
+		//printf("Worked! \n");
 		stuff[0] = strtok(inputtxt, " \n");
 
 		int i = 0;
@@ -46,7 +48,8 @@ int main()
 		}
 		else 
 		{
-			if(id > 0)
+		//printf("Worked! \n");
+			if(viden > 0)
 			{
 				//Parent
 				wait(NULL);
@@ -58,7 +61,7 @@ int main()
 			}
 			else
 			{
-				if(id == 0)
+				if(viden == 0)
 				{
 					if(execvp(stuff[0],stuff) == -1)
 					{
