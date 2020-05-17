@@ -21,11 +21,12 @@ int main()
 	//Receives as input all the lines within the file
 	while(fgets(inputtxt, 100, fp) > 0)
 	{
+
 		//Make a index to use for the array
 		int i = 0;
 
 		//Saves the first text as the first element so the nextsubstrings can be access by passing a pointer
-		stuff[0] = strtok(inputtxt, " \n");
+		stuff[i] = strtok(inputtxt, " \n");
 
 		//Whenever a NULL is called, uses the inputtxt value to return the next substring.
 		while(stuff[i])
@@ -37,7 +38,7 @@ int main()
 		//Make a child process 
 		viden = fork();
 
-		//When the fork is positive it will wait
+		//When the fork is positive (a parent) it will wait
 		if(viden > 0){
 			wait(NULL);
 		}
@@ -51,7 +52,7 @@ int main()
 			}
 			else
 			{
-				//Otherwise if it is 0 but the execvp funtion doesnt work
+				//Otherwise if it is 0 (a child) but the execvp funtion doesnt work
 				if(viden == 0)
 				{
 					if(execvp(stuff[0],stuff) == -1)
