@@ -5,7 +5,7 @@ make: sequence.o pipeline.o
 sequence.o: sequence.c
 	gcc sequence.c -o sequence
 
-pipeline.0: pipeline.c
+pipeline.o: pipeline.c
 	gcc pipeline.c -o pipeline
 
 clean: 
