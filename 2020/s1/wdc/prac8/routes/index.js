@@ -32,4 +32,14 @@ router.get('/brew', function(req, res, next) {
    }
 });
 
+router.post('/combine', function(req,res,next){
+    let stuff = req.body;
+    let things = '';
+    for(line in stuff.lines){
+       things += stuff.lines[line] + stuff.suffix + '\n';
+    }
+    res.send(things);
+
+});
+
 module.exports = router;
