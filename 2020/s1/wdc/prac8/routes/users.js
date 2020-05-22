@@ -8,13 +8,13 @@ router.get('/', function(req, res, next) {
 
 router.get('/getposts', function(req,res,next){
     if(req.query.n){
-        var mpost = [];
-        var m = req.query.n;
+        let mpost = [];
+        let m = req.query.n;
         if(things.length < m)
         {
             res.json(things);
         }   else    {
-            var l=0;
+            let l=0;
             while (l < m)
             {
                 mpost.push(things[l]);
@@ -33,21 +33,14 @@ router.post('/addpost', function(req,res,next){
     res.end();
 });
 
+//task1.6
 router.get('/getposts/id/:n', function(req,res,next){
-    var length = req.params.n+1;
-    var mpost = [];
-    if(length > things.length)
-    {
-            res.json(things);
-        }   else    {
-            var l=0;
-            while (l < length)
-            {
-                mpost.push(things[l]);
-                l++;
-            }
-            res.json(mpost);
-    }
+
+    var length = req.params.n;
+    //let mpost = [];
+   // mpost.push(things[length]);
+   // console.log(length);
+    res.json(things[(length)-(things.length)+1]);
 
 });
 
