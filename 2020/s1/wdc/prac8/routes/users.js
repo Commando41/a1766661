@@ -7,20 +7,20 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/getposts', function(req,res,next){
-    if(req.query.m){
+    if(req.query.n){
         var mpost = [];
-        var m = req.query.m;
-        if(posts.length < n)
+        var m = req.query.n;
+        if(things.length < m)
         {
-            res.json(posts);
+            res.json(things);
         }   else    {
             var l=0;
-            while (l < n)
+            while (l < m)
             {
-                mposts.push(posts[l]);
-                res.json(mposts);
+                mpost.push(things[l]);
                 l++;
             }
+            res.json(mpost);
         }
     }else{
         res.json(things);
