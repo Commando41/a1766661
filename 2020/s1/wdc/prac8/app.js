@@ -23,6 +23,15 @@ app.use(function(req,res,next){
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+
+app.use('/users/*', function(req,res,next){
+    if(req.method === "POST"){
+        console.log("POST from a user");
+        next();
+    }
+    next();
+});
+
 app.use('/users', usersRouter);
 
 module.exports = app;
