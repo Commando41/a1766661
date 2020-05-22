@@ -33,4 +33,22 @@ router.post('/addpost', function(req,res,next){
     res.end();
 });
 
+router.get('/getposts/id/:n', function(req,res,next){
+    var length = req.params.n+1;
+    var mpost = [];
+    if(length > things.length)
+    {
+            res.json(things);
+        }   else    {
+            var l=0;
+            while (l < length)
+            {
+                mpost.push(things[l]);
+                l++;
+            }
+            res.json(mpost);
+    }
+
+});
+
 module.exports = router;
