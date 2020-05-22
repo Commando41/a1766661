@@ -40,7 +40,7 @@ router.get('/getposts/id/:n', function(req,res,next){
     //let mpost = [];
    // mpost.push(things[length]);
    // console.log(length);
-    res.json(things[(length)-(things.length)+1]);
+    res.json(things[(things.length)-(length)-1]);
 
 });
 
