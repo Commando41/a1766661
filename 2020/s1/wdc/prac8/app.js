@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use(function(req,res,next){
-    console.log(count);
+    console.log("Received " + count + "requests");
     count++;
     next();
 });
