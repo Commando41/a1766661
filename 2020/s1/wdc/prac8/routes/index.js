@@ -6,17 +6,20 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+//task1.2
 var mess = 'first';
 router.post('/pass-it-on', function(req, res, next){
    if((req.body.constructor === Object && Object.keys(req.body).length === 0) || !('message' in req.body)){
        res.send(400);
-   }else
+   }
+   else
    {
        res.send(mess);
        mess = req.body.message;
    }
 });
 
+//task1.1
 router.get('/brew', function(req, res, next) {
    if(req.query.drink == 'tea')
    {
@@ -32,6 +35,7 @@ router.get('/brew', function(req, res, next) {
    }
 });
 
+//task1.3
 router.post('/combine', function(req,res,next){
     let stuff = req.body;
     let things = '';
@@ -39,7 +43,6 @@ router.post('/combine', function(req,res,next){
        things += stuff.lines[line] + stuff.suffix + '\n';
     }
     res.send(things);
-
 });
 
 module.exports = router;
