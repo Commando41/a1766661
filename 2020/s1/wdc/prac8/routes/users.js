@@ -37,9 +37,6 @@ router.post('/addpost', function(req,res,next){
 router.get('/getposts/id/:n', function(req,res,next){
 
     var length = req.params.n;
-    //let mpost = [];
-   // mpost.push(things[length]);
-   // console.log(length);
     res.json(things[(things.length)-(length)-1]);
 
 });
