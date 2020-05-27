@@ -14,23 +14,41 @@ Referee::Referee()
 
 void Referee::matchCalc(Human *player, Computer *AI)
 {
+	for(int i = 0; i < 5; i++)
+	{
 	Pchoice = player->value();
 	Cchoice = AI->chosed();
-	//len = atoi(Pchoice[0]);  //atoi converts the char element in the string to integer
-	len = Pchoice[0] - 46;
-
-	for(int i = 2; i < len; i++)
-	{
 		if(Pchoice[i] == 'S' && Cchoice == 'R' || Pchoice[i] == 'R' && Cchoice == 'P' || Pchoice[i] == 'P' && Cchoice == 'S')
 		{
-			matches = matches + "L ";
+			matches = matches + "L";
 		}else
 		{ 
 			if (Pchoice[i] == Cchoice)
 			{
-				matches = matches + "T ";
+				matches = matches + "T";
 			}else{
-				matches = matches + "W ";
+				matches = matches + "W";
+			}
+		}
+	}
+}
+
+void Referee::matchCalc(Computer *AI1, Computer *AI2)
+{
+	for(int i = 0; i < 5; i++)
+	{
+		Pchoice = AI1->chosed();
+		Cchoice = AI2->chosed();
+		if(Pchoice[i] == 'S' && Cchoice == 'R' || Pchoice[i] == 'R' && Cchoice == 'P' || Pchoice[i] == 'P' && Cchoice == 'S')
+		{
+			matches = matches + "L";
+		}else
+		{ 
+			if (Pchoice[i] == Cchoice)
+			{
+				matches = matches + "T";
+			}else{
+				matches = matches + "W";
 			}
 		}
 	}

@@ -10,6 +10,7 @@ class Referee
 	public:
 		Referee();
 		void matchCalc(Human *player, Computer *AI);
+		voidmatchCalc(Computer *AI1, Computer *AI2);
 		string matchResults();
 		string matches;
 		string Pchoice;

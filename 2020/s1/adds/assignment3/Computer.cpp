@@ -6,8 +6,6 @@ using namespace std;
 Computer::Computer()
 {}
 
-virtual void Computer::makeDecision()
-
 char Computer::chosed()
 {
 	return decided;

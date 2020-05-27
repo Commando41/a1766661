@@ -6,10 +6,11 @@ using namespace std;
 class Computer
 {
 	public:
-	Computer();
-	virtual void makeDecision() = 0;
-	char chosed();
-	char decided;
-	~Computer();	
+		Computer();
+		virtual void makeDecision() = 0;
+		char chosed();
+		~Computer();	
+	protected:
+		char decided;
 };
 #endif
