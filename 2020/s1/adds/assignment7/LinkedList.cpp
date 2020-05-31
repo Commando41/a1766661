@@ -144,9 +144,10 @@ void LinkedList::printItems(){
 		return;
 	}
 	while((temp->Getnext()) != NULL){
-		cout << temp->Getdata() << endl;
+		cout << temp->Getdata() << " ";
 		temp=temp->Getnext();
 	}
+	cout << endl;
 }
 
 LinkedList::~LinkedList(){
