@@ -1,1 +1,1 @@
-SELECT last_name, first_name FROM actor ORDER BY first_name;
+SELECT last_name, first_name FROM actor ORDER BY first_name DESC;
