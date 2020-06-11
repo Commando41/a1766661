@@ -18,8 +18,8 @@ router.get('/posts.json', function(req, res, next) {
         // Query to retrieve Blog Posts
         var query = "SELECT name AS author, image AS authorImg, date AS date, title AS title, content AS body "+
                     "FROM users INNER JOIN blogposts on blogposts.userid = users.id "+
-                    "ORDER BY date DESC LIMIT "+req.query.num;
-        connection.query(query, function(err, posts){
+                    "ORDER BY date DESC LIMIT ?";
+        connection.query(query, [req.query.num], function(err, posts){
             if (err) { console.log(err); posts=[];}
 
             // Query to check if user logged in
