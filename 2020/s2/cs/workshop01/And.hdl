@@ -15,4 +15,7 @@ CHIP And {
 
     PARTS:
     // Put your code here:
+	Nand(a=a,b=b,out=humphrey) ;
+	Nand(a=humphrey,b=humphrey,out=out) ;
+	//Not(in=humphrey,out=out) ;
 }

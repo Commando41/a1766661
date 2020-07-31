@@ -74,3 +74,80 @@ aG9wMDEtMjAyMDA3MjQtMTkzMjQwLnppcAo=
 200730-205138 Modified: ZGEzOWEzZWU1ZTZiNGIwZDMyNTViZmVmOTU2MDE4OTBhZmQ4MDcwOSAgLi9QcmVmZXJlbmNlcwo=
 200730-205138 make install
 200730-205138 SVN user: a1766661, repository path: 2020/s2/cs/workshop01
+200731-180148 Modified: MmU0MmNkYzRmYWVlMDdhY2QwMmYyNTIyNjNiMjBmMzUzMjE5OTlhYSAgLi9Ob3QuaGRsCjdlY2I5
+NTBkYjhlYTRhN2U0NWFkOGUxMmZkOGFjZDFkNmY1NjQxODMgIC4vQW5kLmhkbAoyM2I2NWNlOTMz
+YjMyMzRmNGI5ZjZlMTFiYmE3YTNkMTE3OGExZThiICAuL05vdDE2LmhkbAplYmVlZTA3MjNlNTk2
+ZDIzMmVmZjQ2YzcxYTVkMTU1OTYyZWI3ZjVmICAuL1hvci5oZGwKNGIzMzU1ZDYzYWQyMjhkNTY5
+ZjI4MjU0NTExNmZmNTFkNjA5OTllNSAgLi9BbmQxNi5oZGwKNTA5ZjUyYjA1Y2NkMGZiZmRjOTgw
+MmRkOWQ0OGRjMTg2MmVkZDI5MiAgLi9NdXguaGRsCmRmNWQ2MGE5NzhkNjZhOGI5ZTkyMjYzMjVj
+YWNmMzhhOGU0M2ZlZjEgIC4vRE11eC5oZGwKYWFiOTk2Yzg5OTUwMjI3MTM5ZWFhMTVhMjcxMDZl
+MzdjNzJmZTI0MiAgLi9Pci5oZGwKMWNlODA3MDdjZGI3N2FiNTU0NTA0YmE5OTIxMDI4ZTVjZWQ3
+YzI4ZSAgLi9NdXgxNi5oZGwKZjFiMTg0NTQ2MmNiNmNmMjk2NTc4MDMzMjM2NGE2OWNiZmQ0NDFk
+YiAgLi9ETXV4NFdheS5oZGwKOTRiNWEzYjZiMGExN2E3OTQwODcyNzhkMjRmMzc2MWIyYTM0OGRj
+NyAgLi9NdXg0V2F5MTYuaGRsCjY0YzY5MTQ4YzM1NDE0N2UzMTUxYmVmNDBjNzg5NzhhYzE4NTdm
+ZTEgIC4vRE11eDhXYXkuaGRsCjAyNDA0ODU3OTk3MzkxODg5OTkzMWNiMGU2MjE4N2EzZjE5MzNi
+ZjEgIC4vT3IxNi5oZGwKMTE2MDYxZDA1YWQ1NmY5MzhhM2FmODZhZDE4YWIxNTIzZmQwNzVkMSAg
+Li9NdXg4V2F5MTYuaGRsCjdkZjM2MzFjOTlkMDc5OWMyOTE0OTk4MTY0OGM4YjE4NjQxNWRkNjMg
+IC4vT3I4V2F5LmhkbAo=
+200731-180148 make 
+200731-180148 SVN user: a1766661, repository path: 2020/s2/cs/workshop01
+200731-180148 updater:  Directory: ./bin
+200731-180148 updater:  Directory: ./originals
+200731-180148 updater:  Creating: ./Xor.cmp
+200731-180148 updater:  Creating: ./Mux.tst
+200731-180148 updater:  Creating: ./Not16.tst
+200731-180148 updater:  Creating: ./DMux8Way.tst
+200731-180148 updater:  Creating: ./DMux4Way.tst
+200731-180148 updater:  Creating: ./Mux4Way16.tst
+200731-180148 updater:  Creating: ./And.cmp
+200731-180148 updater:  Creating: ./bin/run-tests
+200731-180148 updater:  Creating: ./DMux.tst
+200731-180148 updater:  Creating: updates/Makefile
+200731-180148 updater:  Creating: ./Not.tst
+200731-180148 updater:  Creating: ./originals/Mux.hdl
+200731-180148 updater:  Creating: ./originals/Not16.hdl
+200731-180148 updater:  Creating: ./originals/Mux4Way16.hdl
+200731-180148 updater:  Creating: ./originals/DMux4Way.hdl
+200731-180148 updater:  Creating: ./originals/DMux8Way.hdl
+200731-180148 updater:  Creating: ./originals/DMux.hdl
+200731-180148 updater:  Creating: ./originals/Mux8Way16.hdl
+200731-180148 updater:  Creating: ./originals/Not.hdl
+200731-180148 updater:  Creating: ./originals/Or16.hdl
+200731-180148 updater:  Creating: ./originals/Or8Way.hdl
+200731-180148 updater:  Creating: ./originals/Or.hdl
+200731-180148 updater:  Creating: ./originals/Mux16.hdl
+200731-180148 updater:  Creating: ./originals/And16.hdl
+200731-180148 updater:  Creating: ./originals/Xor.hdl
+200731-180148 updater:  Creating: ./originals/And.hdl
+200731-180148 updater:  Creating: ./Mux8Way16.tst
+200731-180148 updater:  Creating: ./Mux16.cmp
+200731-180148 updater:  Creating: ./And16.cmp
+200731-180148 updater:  Creating: ./Or16.tst
+200731-180148 updater:  Creating: ./Or.tst
+200731-180148 updater:  Creating: ./Or8Way.tst
+200731-180148 updater:  Creating: ./Mux8Way16.cmp
+200731-180148 updater:  Creating: ./Mux16.tst
+200731-180148 updater:  Creating: ./Not.cmp
+200731-180148 updater:  Creating: ./Or.cmp
+200731-180148 updater:  Creating: ./Or8Way.cmp
+200731-180148 updater:  Creating: ./Or16.cmp
+200731-180148 updater:  Creating: ./And16.tst
+200731-180148 updater:  Creating: ./Not16.cmp
+200731-180148 updater:  Creating: ./Xor.tst
+200731-180148 updater:  Creating: ./Mux.cmp
+200731-180148 updater:  Creating: ./DMux.cmp
+200731-180148 updater:  Creating: ./And.tst
+200731-180148 updater:  Creating: ./Mux4Way16.cmp
+200731-180148 updater:  Creating: ./DMux8Way.cmp
+200731-180148 updater:  Creating: ./DMux4Way.cmp
+200731-180148 updater:  Made bin/run-tests executable
+200731-180148 updater:  Updating: updates/README
+200731-180148 updater:  Update installed
+200731-181145 Modified: OGJlMjdjM2JiNWQ1ZjkzNTYyZGJmYzA2NWFjNzBmMzBmNTAwMDA4MSAgLi9BbmQub3V0Cg==
+200731-181145 make 
+200731-181145 SVN user: a1766661, repository path: 2020/s2/cs/workshop01
+200731-182203 Modified: YzYwMjMxNDA2NzQwYzEzZTViY2RkMWM3N2U0ZjdkMzBhZjRkZGU0YSAgLi9Ob3QuaGRsCjQyOGQ5
+ZWE5NzYzMjdiMmYzMTc4YTExOTFiMTQyOWVkODU1MThkMGEgIC4vQW5kLmhkbAowNmZiNTYzOTcz
+NmM4ZGM1YmI3M2UxNzEzN2NmNzgxZjgyZmNiZmI0ICAuL05vdC5vdXQK
+200731-182203 make 
+200731-182203 SVN user: a1766661, repository path: 2020/s2/cs/workshop01
