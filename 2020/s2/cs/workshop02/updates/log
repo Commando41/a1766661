@@ -1,0 +1,36 @@
+200803-185639 Modified: ZGViZGJkNjVkMDhlMzdlYWVmMjc5OTJjMDcwZjlmNmM2NjZjOThjOCAgLi91cGRhdGVzL2luc3Rh
+bGxlci5iYXNoCjQ5ZmQwZTBlYTc0YmIzYTViZjA4YjQwNjcyNGJiNzIxZjcyZjdmNDYgIC4vdXBk
+YXRlcy93b3Jrc2hvcDAyLTIwMjAwNzI0LTE5MzI0NC56aXAK
+200803-185639 make 
+200803-185639 SVN user: a1766661, repository path: 2020/s2/cs/workshop02
+200803-185639 updater:  Directory: ./bin
+200803-185639 updater:  Directory: ./originals
+200803-185639 updater:  Directory: ./originals/ALU
+200803-185639 updater:  Directory: ./ALU
+200803-185639 updater:  Creating: ./HalfAdder.tst
+200803-185639 updater:  Creating: ./Inc16.cmp
+200803-185639 updater:  Creating: ./bin/run-tests
+200803-185639 updater:  Creating: ./Add16.cmp
+200803-185639 updater:  Creating: ./FullAdder.cmp
+200803-185639 updater:  Creating: updates/Makefile
+200803-185639 updater:  Creating: ./originals/HalfAdder.hdl
+200803-185639 updater:  Creating: ./originals/FullAdder.hdl
+200803-185639 updater:  Creating: ./originals/Inc16.hdl
+200803-185639 updater:  Creating: ./originals/Add16.hdl
+200803-185639 updater:  Creating: ./originals/ALU/ALU.hdl
+200803-185639 updater:  Creating: ./FullAdder.tst
+200803-185639 updater:  Creating: ./HalfAdder.cmp
+200803-185639 updater:  Creating: ./Add16.tst
+200803-185639 updater:  Creating: ./Inc16.tst
+200803-185639 updater:  Creating: ./ALU/ALU.tst
+200803-185639 updater:  Creating: ./ALU/ALU-nostat.tst
+200803-185639 updater:  Creating: ./ALU/ALU-nostat.cmp
+200803-185639 updater:  Creating: ./ALU/ALU.cmp
+200803-185639 updater:  Made bin/run-tests executable
+200803-185639 updater:  Creating: HalfAdder.hdl
+200803-185639 updater:  Creating: FullAdder.hdl
+200803-185639 updater:  Creating: Inc16.hdl
+200803-185639 updater:  Creating: Add16.hdl
+200803-185639 updater:  Creating: ALU/ALU.hdl
+200803-185639 updater:  Updating: updates/README
+200803-185639 updater:  Update installed
