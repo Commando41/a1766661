@@ -5,7 +5,9 @@ class BootsExchange {
 	public:
 		int leastAmount(vector<int> left, vector<int> right){
 			int len = right.size();
-			int check[len] = 0;
+			int check[len];
+			for( int m = 0; m < len; l++){ 
+check[m] = 0;}
 			int d, i, miss = 0;
 			
 			for(d = 0; d < len; d++){
