@@ -3,7 +3,7 @@ using namespace std;
 
 class BootsExchange {
 	public:
-		leastAmount(vector<int> left, vector<int> right){
+		int leastAmount(vector<int> left, vector<int> right){
 			int len = right.size();
 			int check[len] = 0;
 			int d, i, miss = 0;
