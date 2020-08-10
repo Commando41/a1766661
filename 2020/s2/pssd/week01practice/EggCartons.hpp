@@ -12,13 +12,7 @@ class EggCartons{
 			if(n >= 0){
 				cartons = cartons + n / 8;
 				return cartons;
-			}
-			/*return cartons;
-			if((n % 2) != 0 || n < 12 && n!=6 && n!=8){
-				return -1;
-			}*/
-
-			
+			}			
 
 			return -1;
 		}

@@ -4,15 +4,28 @@
 #include "StreetParking.hpp"
 #include "ThrowTheBall.hpp"
 #include "EggCartons.hpp"
+#include "CircularLine.hpp"
 using namespace std;
 
 int main(){
 
+	CircularLine css;
+	int n;
+	cout << "Enter how many stations: ";
+	cin >> n;
+	int a[n];
+	for(int i = 0; i < n; i++){
+		cout << "Enter in the value for station " << i+1 << endl;
+		cin >> a[i];
+	}
+	cout << "The result is: " << css.longestTravel(a) << endl;
+/*
 	EggCartons css;
 	int n;
 	cout << "Enter the amount of eggs: ";
 	cin >> n;
 	cout << "The amount of cartons to buy is: " << css.minCartons(n) << endl;
+*/
 
 /*	ThrowTheBall css;
 	int N, M, L;
