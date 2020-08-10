@@ -3,11 +3,18 @@
 #include <string>
 #include "StreetParking.hpp"
 #include "ThrowTheBall.hpp"
+#include "EggCartons.hpp"
 using namespace std;
 
 int main(){
 
-	ThrowTheBall css;
+	EggCartons css;
+	int n;
+	cout << "Enter the amount of eggs: ";
+	cin >> n;
+	cout << "The amount of cartons to buy is: " << css.minCartons(n) << endl;
+
+/*	ThrowTheBall css;
 	int N, M, L;
 	cout << "Enter amount of players: ";
 	cin >> N;
@@ -16,7 +23,7 @@ int main(){
 	cout << "\nEnter the length of pass: ";
 	cin >> L;
 	cout << "The number of passes is: " << css.timesThrown(N,M,L) << endl;
-
+*/
 
 /*	StreetParking css;
 	string street;
