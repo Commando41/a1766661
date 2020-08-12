@@ -5,18 +5,21 @@
 #include "ThrowTheBall.hpp"
 #include "EggCartons.hpp"
 #include "CircularLine.hpp"
+#include <vector>
 using namespace std;
 
 int main(){
 
 	CircularLine css;
-	int n;
-	cout << "Enter how many stations: ";
+	vector<int> a;
+	int n, i = 1;
+	cout << "Enter in the value for station 1: ";
 	cin >> n;
-	int a[n];
-	for(int i = 0; i < n; i++){
-		cout << "Enter in the value for station " << i+1 << endl;
-		cin >> a[i];
+	while(n > 0){
+		a.push_back(n);
+		i++;
+		cout << "Enter in the value for station " << i << ": ";
+		cin >> n;
 	}
 	cout << "The result is: " << css.longestTravel(a) << endl;
 /*
