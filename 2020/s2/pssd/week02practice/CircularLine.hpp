@@ -4,53 +4,26 @@ using namespace std;
 class CircularLine{
 	public:
 		int longestTravel(vector<int> t){
-			
-			int m, high, left, right, len = t.size();
-			int curhigh = 0;
-			for(int i = 0; i < len; i++){
-				for(int d = i; d < len; d++){
-					left = right = 0;
-					if(i != d){
-						m = i-1;
-						while(m != d){
-							left += t[m];
-							m--;
-							if(m<0){
-								m+=len;
-							}
-					if(i != d){
-						m = i;
-						while(m != d){
-							left += t[m];
-							m--;
-							if(m<0){
-								m+=len;
-							}
-
-					for(m = i; m != d; m++){
-						if(m=len){
-							m-=len;
-
-						}
-						left += t[m];
-					}
-					for(m = i-1; m != d; m--){
-						if(m=-1){
-							m+=len;
-						}
-						right += t[m];
-					}
-					if(left < right){
-						high = left;
-					}else{
-						high = right;
-					}
-					if(high > curhigh){
-						curhigh = high;
-					}
+		int len = t.size();
+		int i, length = 0;
+		for (i = 0; i < len; i++){
+			length += t[i];
+		}
+		int left, high, highestmin = 0;
+		for (i = 0; i < len; i++) {
+			for (int j = 1; j < len; j++) {
+				left = 0;
+				for (int k = i; k < j; k++)
+					left += t[k];
+				if(left < length - left){
+					high = left;
 				}
+				else{
+					high = length - left;
+				}
+				highestmin = max(highestmin, high);
 			}
-
-			return curhigh;
+		}
+	return highestmin;
 		}
 };
