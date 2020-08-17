@@ -7,42 +7,31 @@ class SquareOfDigits{
 		int getMax(vector<string> data){
 			int rlen = data.size();
 			int clen = data[0].size();
-			int r, c, maxr, maxc;
+			int r, c, squ;
 
-			/*if(rlen < clen){
-				maxc = clen/2;
-				if(rlen < maxc){
-					maxr = rlen;
-				}else{
-					maxr = rlen/2;
-				}
+			if(rlen < clen){
+				squ = rlen - 1;
+				clen = clen - rlen + 1;
+				rlen = 1;
 			}else if(rlen > clen){
-				maxr= rlen/2;
-				if(maxr > clen){
-					maxc = clen;
-				}else{
-					maxc = clen/2;
-				}
-			}*/
+				squ = clen - 1;
+				rlen = rlen - clen + 1;
+				clen = 1;
+			}else{
+				squ = clen - 1;
+				clen = rlen = 1;
+			}
 
-			int squareing = clen;
-			maxr = maxc = 1;
-
-			while(squareing > 1){
-				
-			for(r = 0; r < maxr; r++){
-				for(c = 0; c < maxc; c++){
-					if(data[squareing+r-1][squareing+c-1] == data[r][squareing+c-1]){
-						if(data[squareing+r-1][squareing+c-1] == data[r][c]){
-							if(data[squareing+r-1][squareing+c-1] == data[squareing+r-1][c])
-								return squareing*squareing;
-						}
+			while(squ > 0){
+				for(r = 0; r < rlen; r++){
+					for(c = 0; c < clen; c++){
+						if(data[squ+r][squ+c] == data[r][squ+c] && data[squ+r][squ+c] == data[r][c] && data[squ+r][squ+c] == data[squ+r][c])
+									return (squ + 1)*(squ + 1);
 					}
 				}
-			}
-			squareing--;
-			maxr++;
-			maxc++;
+				squ--;
+				rlen++;
+				clen++;
 			}
 			return 1;
 		}	
