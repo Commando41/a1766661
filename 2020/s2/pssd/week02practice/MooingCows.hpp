@@ -17,11 +17,11 @@ class MooingCows{
 						for(int i = 0; i < lenr; i++){
 							for(int j = 0; j < lenc; j++){
 								if(farmland[x][y] == 'C'){
-									cur += ((i+1)-(x+1))*((i+1)-(x+1)) + ((j+1)-(y+1))*((j+1)-(y+1));
+									cur += (x-i)*(x - i) + (y+j)*(y+j);
 								}
 							}
 						}
-						if(dist < 0 || cur < dist){
+						if(dist == -1 || cur < dist){
 							dist = cur;
 						}
 					}
