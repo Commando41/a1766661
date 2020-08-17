@@ -7,7 +7,7 @@ class MooingCows{
 		int dissatisfaction(vector<string> farmland){
 			int lenr = farmland.size();
 			int lenc = farmland[0].size();
-			int dist = 10^5;
+			int dist = -1;
 			int cur;
 
 			for(int x = 0; x < lenr; x++){
@@ -21,8 +21,9 @@ class MooingCows{
 								}
 							}
 						}
-						if(cur < dist)
+						if(dist < 0 || cur < dist){
 							dist = cur;
+						}
 					}
 				}
 			}
