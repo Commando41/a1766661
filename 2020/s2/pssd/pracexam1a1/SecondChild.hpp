@@ -1,7 +1,8 @@
 using namespace std;
-#include <string>
+#include <bits/stdc++.h>
 
-class SecondChild(){
+class SecondChild{
+	public:
 	string chooseName(string Father, string Mather, string Child1, string Gender){
 		string dad[2];
 		string mum[2];
@@ -16,12 +17,13 @@ class SecondChild(){
 			ee >> elder[i];
 		}
 		if(Child1[0] == 'A' || Child1[0] == 'E' || Child1[0] == 'I' || Child1[0] == 'O' || Child1[0] == 'U' || Child1[0] == 'Y'){
-			if(Gender == 'Boy'){
+			if(Gender == "Boy"){
 				return dad[1] + " " + dad[0];
 			}else{
 				return mum[0] + " " + elder[1];
+			}
 		}else{
-			if(Gender == 'Boy'){
+			if(Gender == "Boy"){
 				return dad[0] + " " + elder[1];
 			}else{
 				return mum[1] + " " + mum[0];
