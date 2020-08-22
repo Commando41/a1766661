@@ -3,6 +3,7 @@ using namespace std;
 
 class FibonacciDiv2{
 public:
+
 	int find(int N){
 		int fib[31];
 		fib[0] = 0;
