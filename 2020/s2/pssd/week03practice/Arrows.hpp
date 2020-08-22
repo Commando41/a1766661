@@ -6,7 +6,7 @@ class Arrows{
 		int longestArrow(string s){
 			int i, left = 0, right = 0;
 			char lef, rig;
-			bool la = false;
+			bool la = false, ra = false;
 			int lonr = 0;
 			int lonl = 0;
 			for(i = 0; i < s.size(); i++){
@@ -43,7 +43,7 @@ class Arrows{
 						}else{
 							la = false;
 						}
-					}else{
+					}else if(la == true){
 						left++;
 					}						
 				}
@@ -61,7 +61,7 @@ class Arrows{
 						}else{
 							la = false;
 						}
-					}else{
+					}else if(la == true){
 						left++;
 					}
 				}
