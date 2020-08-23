@@ -14,7 +14,6 @@ class Arrows{
 					lef = ' ';
 					if(left > lonl)
 						lonl = left;
-
 					left = 1;
 					right = 0;
 				}
@@ -23,7 +22,6 @@ class Arrows{
 					right++;
 					if(lonr < right)
 						lonr = right;
-
 					left = 0;
 					right = 1;
 				}
@@ -63,13 +61,11 @@ class Arrows{
 						left++;
 					}
 				}
-
-
 			}
-
+			if(lonl < left)
+				lonl = left;
 			if(lonr == lonl && lonl == 0)
 				return -1;
-
 			return max(lonl, lonr);
 		}	
 };
