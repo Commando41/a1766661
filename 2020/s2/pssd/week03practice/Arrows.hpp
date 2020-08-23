@@ -40,10 +40,10 @@ class Arrows{
 							lef = '-';
 							left = 2;
 						}else{
-							if(lonl < left){
+							la = false;
+							if(lonl < left)
 								lonl = left;
-								la = false;
-							}
+							left = 0;
 						}
 					}else if(la == true){
 						left++;
@@ -61,10 +61,10 @@ class Arrows{
 							lef = '=';
 							left++;
 						}else{
-							if(lonl < left){
-								la = false;
+							la = false;
+							if(lonl < left)
 								lonl = left;
-							}
+							left = 0;
 						}
 					}else if(la == true){
 						left++;
