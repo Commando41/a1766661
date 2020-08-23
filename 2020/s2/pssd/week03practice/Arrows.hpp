@@ -9,15 +9,18 @@ class Arrows{
 			bool la = false;
 			for(i = 0; i < s.size(); i++){
 				if(s[i] == '<'){
-					la = true;
-
-					lef = ' ';
-					if(left > lonl)
+					if(left > lonl && la == true)
 						lonl = left;
+					la = true;
+					lef = ' ';
 					left = 1;
 					right = 0;
 				}
 				if(s[i] == '>'){
+					if(left > lonl && la == true){
+						lonl = left;
+						la = false;
+					}
 					rig = ' ';
 					right++;
 					if(lonr < right)
@@ -37,7 +40,10 @@ class Arrows{
 							lef = '-';
 							left = 2;
 						}else{
-							la = false;
+							if(lonl < left){
+								lonl = left;
+								la = false;
+							}
 						}
 					}else if(la == true){
 						left++;
@@ -55,14 +61,17 @@ class Arrows{
 							lef = '=';
 							left++;
 						}else{
-							la = false;
+							if(lonl < left){
+								la = false;
+								lonl = left;
+							}
 						}
 					}else if(la == true){
 						left++;
 					}
 				}
 			}
-			if(lonl < left)
+			if(lonl < left && la == true)
 				lonl = left;
 			if(lonr == lonl && lonl == 0)
 				return -1;
