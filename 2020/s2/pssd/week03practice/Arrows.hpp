@@ -1,12 +1,14 @@
-#include <bits/stdc++.h>
 using namespace std;
+#include <string>
+#include <algorithm>
+#include <stdbool.h>
 
 class Arrows{
 	public:
 		int longestArrow(string s){
 			int i, left = 0, right = 0, lonr = 0, lonl = 0;
 			char lef, rig;
-			bool la = false;
+			bool la = false; // This will make sure we passed a < to count all the lines
 			for(i = 0; i < s.size(); i++){
 				if(s[i] == '<'){
 					if(left > lonl && la == true)
@@ -15,18 +17,19 @@ class Arrows{
 					lef = ' ';
 					left = 1;
 					right = 0;
+					rig = ' ';
 				}
 				if(s[i] == '>'){
 					if(left > lonl && la == true){
 						lonl = left;
 						la = false;
 					}
+					lef = ' ';
 					rig = ' ';
 					right++;
 					if(lonr < right)
 						lonr = right;
-					left = 0;
-					right = 1;
+					left = right = 0;
 				}
 				if(s[i] == '-'){
 					if(rig != '-'){
@@ -59,7 +62,7 @@ class Arrows{
 					if(lef != '=' && la == true){
 						if(left == 1){
 							lef = '=';
-							left++;
+							left = 2;
 						}else{
 							la = false;
 							if(lonl < left)
