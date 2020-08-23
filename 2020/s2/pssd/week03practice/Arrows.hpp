@@ -4,11 +4,9 @@ using namespace std;
 class Arrows{
 	public:
 		int longestArrow(string s){
-			int i, left = 0, right = 0;
+			int i, left = 0, right = 0, lonr = 0, lonl = 0;
 			char lef, rig;
-			bool la = false, ra = false;
-			int lonr = 0;
-			int lonl = 0;
+			bool la = false;
 			for(i = 0; i < s.size(); i++){
 				if(s[i] == '<'){
 					la = true;
@@ -37,7 +35,7 @@ class Arrows{
 						right++;
 					}
 					if(lef != '-' && la == true){
-						if(left = 1){
+						if(left == 1){
 							lef = '-';
 							left = 2;
 						}else{
@@ -55,7 +53,7 @@ class Arrows{
 						right++;
 					}
 					if(lef != '=' && la == true){
-						if(left = 1){
+						if(left == 1){
 							lef = '=';
 							left++;
 						}else{
