@@ -1,5 +1,4 @@
 #include <string>
-#include <vector>
 using namespace std;
 
 class StrangeComputer{
@@ -9,7 +8,6 @@ class StrangeComputer{
 			string s;
 			for(i = 0; i < len; i++)
 				s = s + '0';
-			
 			for(i = 0; i < len; i++){
 				if(s[i] != mem[i]){
 					d++;
