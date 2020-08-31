@@ -8,22 +8,22 @@ class ImportantTasks{
 			sort(computers.begin(), computers.end());
 			int lencpl = complexity.size();
 			int lencpt = computers.size();
-			int d = 0, pos = 0;
-			for(int i = 0; i < lencpl; i++){
-				if(complexity[i] <= computers[d]){
+			int d = lencpl-1, pos = 0;
+			for(int i = lencpt-1; i >= 0; i--){
+				if(complexity[d] <= computers[i]){
 					pos++;
-					d++;
+					d--;
 				}else{
-					while(d < lencpt){
-						d++;
-						if(complexity[i] <= computers[d]){
+					while(d >= 0){
+						d--;
+						if(complexity[d] <= computers[i]){
 							pos++;
-							d++;
+							d--;
 							break;
 						}
 					}
 				}
-				if(d >= lencpt)
+				if(d < 0)
 					break;
 			}
 			return pos;
