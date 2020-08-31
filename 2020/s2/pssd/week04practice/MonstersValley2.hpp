@@ -11,7 +11,7 @@ class MonstersValley2{
 			// for(int i = 0; i < dread.size(); i++)
 			// 	cout << price[i] << " ";
 			// cout << endl;
-			long long power = 0;
+			long long power = (long long)dread[0];
 			int cost = price[0];
 			price.erase(price.begin());
 			dread.erase(dread.begin());
