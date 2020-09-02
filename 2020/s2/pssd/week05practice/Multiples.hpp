@@ -5,7 +5,18 @@ class Multiples{
 	public:
 		int number(int min, int max, int factor){
 			int index, divs = 0;
-			index = min + abs(min % factor);
+			if(min % factor == 0)
+				index = min;
+			else
+				for(int m = 1; m <= factor; m++){
+					if((min + m) % factor == 0){
+						index = min + m;
+						break;
+					}else if((min - m) * factor == 0){
+						index = min - m + factor;
+						break;
+					}	
+				}
 			while(index <= max){
 				if(index + factor*100000 <= max){
 					index += factor*100000;
