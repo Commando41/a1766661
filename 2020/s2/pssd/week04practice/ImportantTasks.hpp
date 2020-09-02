@@ -13,22 +13,23 @@ class ImportantTasks{
 			// for(int i = 0; i < lencpt; i++)
 			// 	cout << computers[i] << " ";
 			// cout << endl;
-			sort(complexity.begin() ,complexity.end());
+			sort(complexity.begin(), complexity.end());
 			sort(computers.begin(), computers.end());
-			int d = 0, pos = 0;
+			int d = 0;
+			int pos = 0;
 			for(int i = 0; i < lencpl; i++){
 				if(complexity[i] <= computers[d]){
-					pos++;
+					pos = pos + 1;
 				}else{
 					while(d < lencpt){
-						d++;
+						d = d + 1;
 						if(complexity[i] <= computers[d]){
-							pos++;
+							pos = pos + 1;
 							break;
 						}
 					}
 				}
-				d++;
+				d = i-1;
 				if(d >= lencpt)
 					break;
 			}
