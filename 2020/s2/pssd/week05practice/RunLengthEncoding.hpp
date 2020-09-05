@@ -5,7 +5,7 @@ using namespace std;
 class RunLengthEncoding{
 	public:
 		string decode(string text){
-			string display, number = "1";
+			string display, number = " ";
 			int len = text.size();
 			int total = 0;
 			for(int i = 0; i < len; i++){
