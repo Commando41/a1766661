@@ -11,6 +11,8 @@ class RunLengthEncoding{
 			for(int i = 0; i < len; i++){
 				if(isdigit(text[i])){
 					number += text[i];
+					if(number.size() > 2)
+						return "TOO LONG";
 				}else{
 					int num;
 					if(number == " ")
