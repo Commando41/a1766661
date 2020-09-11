@@ -28,7 +28,7 @@ class Barbecue{
 					i--;
 				}
 			}
-			if(ppl.size() == 1
+			if(ppl.size() == 1)
 				return ppl[0];
 			high = vo[0];
 			for(int i = 1; i < vo.size(); i++){
