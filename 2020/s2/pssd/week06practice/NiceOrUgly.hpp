@@ -6,6 +6,7 @@ class NiceOrUgly{
 	public:
 		string describe(string s){
 			int vow = 0, cont = 0;
+			cout << s << endl;
 			vector<int> lol;
 			for(int i = 0; i < s.size(); i++){
 				if(s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U'){
