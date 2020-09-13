@@ -1,20 +1,14 @@
-using namespace std;
 #include <string>
 #include <vector>
-
 class NiceOrUgly{
 	public:
 		string describe(string s){
 			int vow = 0, cont = 0;
-			cout << s << endl;
-			vector<int> lol;
 			for(int i = 0; i < s.size(); i++){
 				if(s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U'){
 					cont = 0;
 					vow++;
-				}else if(s[i] == '?'){
-					lol.push_back(i);
-				}else{
+				}else if(s[i] != '?'){
 					vow = 0;
 					cont++;
 				}
@@ -22,11 +16,6 @@ class NiceOrUgly{
 					return "UGLY";
 			}
 			cont = vow = 0;
-			// for(int i = 0; i < lol.size(); i++){
-
-			// 	if(mark == 3)
-			// 		return "42";
-			// }
 			int mark = 0, trollv = 0, trollc = 0, cr = 0;
 			for(int i = 0; i < s.size(); i++){
 				if(s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U'){
@@ -36,12 +25,26 @@ class NiceOrUgly{
 					vow++;
 					cont++;
 					mark++;
+					trollc = trollv = 0;
+					if(vow == 3){
+						if(s[i-1] == '?')
+							vow = 1;
+						else if(s[i-2] == '?')
+							vow--;
+					}else if(cont == 5){
+						if(s[i-1] == '?')
+							cont = 1;
+						else if(s[i-2] == '?')
+							cont = 2;
+						else if(s[i-3] == '?')
+							cont = 3;
+						else if(s[i-4] == '?')
+							cont--;
+					}
 				}else{
 					vow = mark = trollc = 0;;
 					cont++;
 				}
-				if(mark == 3)
-					return "42";
 				if(vow == 3)
 					trollv = 1;
 				else if(cont == 5)
