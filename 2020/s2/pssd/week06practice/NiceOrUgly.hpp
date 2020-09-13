@@ -28,6 +28,8 @@ class NiceOrUgly{
 					mark++;
 					trollc = trollv = 0;
 					if(vow == 3){
+						if(s[i-1] == '?' && s[i-2] == '?')
+							cr = 1;
 						if(s[i-1] == '?')
 							vow = 1;
 						else if(s[i-2] == '?')
