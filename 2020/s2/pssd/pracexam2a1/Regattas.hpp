@@ -36,9 +36,6 @@ class Regattas{
 							isThere = 1;
 							break;
 						}
-						if(ticket[i] != regattas[d][m] && isThere == 0)
-							return -1;
-
 					}
 					if(isThere == 1)
 						break;
