@@ -40,6 +40,8 @@ class Regattas{
 					}
 					if(isThere == 1)
 						break;
+					else if(d == regattas.size()-1 && isThere == 0)
+						return -1;
 				}
 			}
 			if(regattas.size() == ini)
