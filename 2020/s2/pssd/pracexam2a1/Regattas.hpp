@@ -19,6 +19,7 @@ class Regattas{
 			int wins = 0, isThere = 0;
 			//int lenb = regattas.size();
 			//cout << "vars defined" << endl;
+			int ini = regattas.size();
 			for(int i = 0; i < ticket.size(); i++){
 				isThere = 0;
 				//cout << "ticket char No. " << i+1 << endl;
@@ -41,6 +42,8 @@ class Regattas{
 						break;
 				}
 			}
+			if(regattas.size() == ini)
+				return -1;
 			return wins;
 		}
 };
