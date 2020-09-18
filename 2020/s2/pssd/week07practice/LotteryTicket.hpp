@@ -13,6 +13,7 @@ class LotteryTicket {
 				|| b3 + b4 == price
 				|| b1 + b2 + b3 == price
 				|| b1 + b2 + b4 == price
+				|| b1 + b3 + b4 == price
 				|| b2 + b3 + b4 == price
 				|| b1 + b2 + b3 + b4 == price)
 				return "POSSIBLE";		
